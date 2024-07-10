@@ -34,27 +34,27 @@ const Navbar = () => {
                 <div className={navbarStyles.mainContent}>
                     <hr className={navbarStyles.horizontalLine} size={1} />
                     <div className={navbarStyles.navigationContainer}>
-                        <Link to="/reactRestaurantWebsite//" className={navbarStyles.navigationLinks}>
+                        <Link to="/" className={navbarStyles.navigationLinks}>
                             <h3 >
                                 Home
                             </h3>
                         </Link>
-                        <Link to="/reactRestaurantWebsite//menu" className={navbarStyles.navigationLinks}>
+                        <Link to="/menu" className={navbarStyles.navigationLinks}>
                             <h3 >
                                 Menu
                             </h3>
                         </Link>
-                        <Link to="/reactRestaurantWebsite//reserve" className={navbarStyles.navigationLinks}>
+                        <Link to="/reserve" className={navbarStyles.navigationLinks}>
                             <h3 >
                                 Reservation
                             </h3>
                         </Link>
-                        <Link to="/reactRestaurantWebsite//gallery" className={navbarStyles.navigationLinks}>
+                        <Link to="/gallery" className={navbarStyles.navigationLinks}>
                             <h3 >
                                 Gallery
                             </h3>
                         </Link>
-                        <Link to="/reactRestaurantWebsite//contact" className={navbarStyles.navigationLinks}>
+                        <Link to="/contact" className={navbarStyles.navigationLinks}>
                             <h3 >
                                 Contact
                             </h3>

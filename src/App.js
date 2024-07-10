@@ -19,12 +19,12 @@ function App() {
         <Navbar />
         <div>
           <Routes>
-            <Route path="/reactRestaurantWebsite//" element={<Homepage />} />
-            <Route path="/reactRestaurantWebsite//menu" element={<Menu />} />
-            <Route path="/reactRestaurantWebsite//contact" element={<Contact />} />
-            <Route path="/reactRestaurantWebsite//reserve" element={<Reserve />} />
-            <Route path="/reactRestaurantWebsite//search" element={<Search />} />
-            <Route path="/reactRestaurantWebsite//gallery" element={<Gallery />} />
+            <Route path="/" element={<Homepage />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/reserve" element={<Reserve />} />
+            <Route path="/search" element={<Search />} />
+            <Route path="/gallery" element={<Gallery />} />
           </Routes>
         </div>
         <Footer />
