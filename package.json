@@ -1,7 +1,6 @@
 {
   "name": "restaurant",
   "version": "0.1.0",
-  "homepage": "https://AadityaShah03.github.io/reactRestaurantWebsite",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -21,12 +20,9 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-transform-runtime": "^7.6.2",
-    "gh-pages": "^6.1.1",
     "sass": "^1.63.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
