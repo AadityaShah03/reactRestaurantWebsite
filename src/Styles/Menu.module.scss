@@ -1,0 +1,1449 @@
+@use "../components/utils.scss" as *;
+
+
+.menuOverviewSection {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41 46 54);
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 3%;
+
+    @include xs {
+        margin: 65px auto 80px;
+    }
+
+    @include tn {
+        margin: 50px auto;
+    }
+}
+
+
+.menuSection {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    @include tn {
+        margin: 50px 0 0;
+    }
+}
+
+.horizontalLineBeforeTitle {
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    background-color: rgb(225 177 104);
+}
+
+.menuTitle {
+    display: flex;
+    justify-content: center;
+    margin: 11px 0 0 1px;
+    font: 700 60px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(255 255 255);
+    text-align: center;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 52px;
+    }
+
+    @include xxs {
+        font-size: 36px;
+    }
+}
+
+.horizontalLineAfterTitle {
+    margin: 9px 0 0;
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    background-color: rgb(225 177 104);
+}
+
+.startersSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.starterHeaderRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10px;
+    margin: 200px auto;
+    width: 1377.015625px;
+    max-width: 85%;
+
+    @include xl {
+        flex-direction: column;
+        gap: 30px 10px;
+    }
+
+    @include md {
+        margin: 150px auto;
+    }
+
+    @include xs {
+        margin: 80px auto;
+    }
+
+    @include tn {
+        margin: 50px auto;
+    }
+}
+
+.heroImage {
+    width: 553px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include xl {
+        width: 100%;
+        min-width: unset;
+        max-width: 553px;
+    }
+}
+
+.headerCol {
+    display: flex;
+    flex-direction: column;
+    gap: 44px 0;
+    width: 774px;
+    min-width: 0;
+
+    @include xl {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.heroTitle {
+    display: flex;
+    justify-content: center;
+    width: 128px;
+    max-width: 85%;
+    font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 36px;
+    }
+
+    @include xxs {
+        font-size: 32px;
+    }
+}
+
+.startersListWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0;
+}
+
+.starterItemRow {
+    display: flex;
+    gap: 0 21px;
+
+    @include md {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 21px;
+    }
+}
+
+.starterItemImage {
+    width: 84px;
+    min-width: 0;
+    height: 84px;
+    object-fit: cover;
+
+    @include md {
+        width: 100%;
+        min-width: unset;
+        max-width: 84px;
+    }
+}
+
+.starterItemDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 2px 0;
+    margin: 15px 0 8px;
+    width: 669px;
+    min-width: 0;
+
+    @include md {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.starterItemTitle {
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.starterItemInfoRow {
+    display: flex;
+    gap: 0 9px;
+
+    @include xxl {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 9px;
+    }
+}
+
+.starterItemSubtitle {
+    margin: 9px 0 0;
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.starterItemIcon {
+    margin: 20px 0 8px;
+    width: 272px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+        max-width: 272px;
+    }
+}
+
+.starterItemPrice {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 11px;
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.mainDishSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px 0;
+
+    @include md {
+        gap: 150px 0;
+    }
+
+    @include xs {
+        gap: 80px 0;
+    }
+
+    @include tn {
+        gap: 50px 0;
+    }
+}
+
+.heroImageMain {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    object-fit: cover;
+}
+
+.dishesFlexRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10px;
+    margin: 0 auto 199px;
+    width: 1376.0625px;
+    max-width: 85%;
+
+    @include xl {
+        flex-direction: column;
+        gap: 30px 10px;
+    }
+
+    @include md {
+        margin: 0 auto 150px;
+    }
+
+    @include xs {
+        margin: 0 auto 80px;
+    }
+
+    @include tn {
+        margin: 0 auto 50px;
+    }
+}
+
+.mainDishColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 44px 0;
+    width: 775px;
+    min-width: 0;
+
+    @include xl {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.mainDishTitle {
+    display: flex;
+    justify-content: center;
+    width: 168px;
+    max-width: 85%;
+    font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 36px;
+    }
+
+    @include xxs {
+        font-size: 32px;
+    }
+}
+
+.dishesColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0;
+}
+
+.grilledSalmonRow {
+    display: flex;
+    gap: 0 21px;
+
+    @include md {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 21px;
+    }
+}
+
+.grilledSalmonImage {
+    width: 84px;
+    min-width: 0;
+    height: 84px;
+    object-fit: cover;
+
+    @include md {
+        width: 100%;
+        min-width: unset;
+        max-width: 84px;
+    }
+}
+
+.grilledSalmonColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 2px 0;
+    margin: 15px 0 8px;
+    width: 670px;
+    min-width: 0;
+
+    @include md {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.grilledSalmonTitle {
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.grilledSalmonDetailsRow {
+    display: flex;
+    gap: 0 9px;
+
+    @include xxl {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 9px;
+    }
+}
+
+.grilledSalmonSubtitle {
+    margin: 9px 0 0;
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.grilledSalmonIcon {
+    margin: 20px 0 8px;
+    width: 273px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+        max-width: 273px;
+    }
+}
+
+.grilledSalmonPrice {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 11px;
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.roastBeefRow {
+    display: flex;
+    gap: 0 21px;
+
+    @include md {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 21px;
+    }
+}
+
+.roastBeefImage {
+    width: 84px;
+    min-width: 0;
+    height: 84px;
+    object-fit: cover;
+
+    @include md {
+        width: 100%;
+        min-width: unset;
+        max-width: 84px;
+    }
+}
+
+.roastBeefColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 2px 0;
+    margin: 15px 0 8px;
+    width: 670px;
+    min-width: 0;
+
+    @include md {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.roastBeefTitle {
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.roastBeefDetailsRow {
+    display: flex;
+    gap: 0 9px;
+
+    @include xxl {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 9px;
+    }
+}
+
+.roastBeefSubtitle {
+    margin: 9px 0 0;
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.roastBeefIcon {
+    margin: 20px 0 8px;
+    width: 273px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+        max-width: 273px;
+    }
+}
+
+.roastBeefPrice {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 11px;
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.vegetarianCurryRow {
+    display: flex;
+    gap: 0 21px;
+
+    @include md {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 21px;
+    }
+}
+
+.vegetarianCurryImage {
+    width: 84px;
+    min-width: 0;
+    height: 84px;
+    object-fit: cover;
+
+    @include md {
+        width: 100%;
+        min-width: unset;
+        max-width: 84px;
+    }
+}
+
+.vegetarianCurryColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 2px 0;
+    margin: 15px 0 8px;
+    width: 670px;
+    min-width: 0;
+
+    @include md {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.vegetarianCurryTitle {
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.vegetarianCurryDetailsRow {
+    display: flex;
+    gap: 0 9px;
+
+    @include xxl {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 9px;
+    }
+}
+
+.vegetarianCurrySubtitle {
+    margin: 9px 0 0;
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.vegetarianCurryIcon {
+    margin: 20px 0 8px;
+    width: 273px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+        max-width: 273px;
+    }
+}
+
+.vegetarianCurryPrice {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 11px;
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.veganPotatoCurryRow {
+    display: flex;
+    gap: 0 21px;
+
+    @include md {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 21px;
+    }
+}
+
+.veganPotatoCurryImage {
+    width: 84px;
+    min-width: 0;
+    height: 84px;
+    object-fit: cover;
+
+    @include md {
+        width: 100%;
+        min-width: unset;
+        max-width: 84px;
+    }
+}
+
+.veganPotatoCurryColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 2px 0;
+    margin: 15px 0 8px;
+    width: 670px;
+    min-width: 0;
+
+    @include md {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.veganPotatoCurryTitle {
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    letter-spacing: -0.1px;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.veganPotatoCurryDetailsRow {
+    display: flex;
+    gap: 0 9px;
+
+    @include xxl {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 9px;
+    }
+}
+
+.veganPotatoCurrySubtitle {
+    margin: 9px 0 0;
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.veganPotatoCurryIcon {
+    margin: 20px 0 8px;
+    width: 273px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+        max-width: 273px;
+    }
+}
+
+.veganPotatoCurryPrice {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 11px;
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.backgroundImage {
+    width: 553px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include xl {
+        width: 100%;
+        min-width: unset;
+        max-width: 553px;
+    }
+}
+
+
+.dessertMenuSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px 0;
+
+    @include md {
+        gap: 150px 0;
+    }
+
+    @include xs {
+        gap: 80px 0;
+    }
+
+    @include tn {
+        gap: 50px 0;
+    }
+}
+
+.mainImage {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    object-fit: cover;
+}
+
+.menuItemContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10px;
+    margin: 0 auto 200px;
+    width: 1377.015625px;
+    max-width: 85%;
+
+    @include xl {
+        flex-direction: column;
+        gap: 30px 10px;
+    }
+
+    @include md {
+        margin: 0 auto 150px;
+    }
+
+    @include xs {
+        margin: 0 auto 80px;
+    }
+
+    @include tn {
+        margin: 0 auto 50px;
+    }
+}
+
+.menuItemImage {
+    width: 553px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include xl {
+        width: 100%;
+        min-width: unset;
+        max-width: 553px;
+    }
+}
+
+.menuItemDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 44px 0;
+    width: 774px;
+    min-width: 0;
+
+    @include xl {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.menuTitleDes {
+    display: flex;
+    justify-content: center;
+    width: 117px;
+    max-width: 85%;
+    font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 36px;
+    }
+
+    @include xxs {
+        font-size: 32px;
+    }
+}
+
+.dessertItemList {
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0;
+}
+
+.dessertItemRow {
+    display: flex;
+    gap: 0 21px;
+
+    @include md {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 21px;
+    }
+}
+
+.dessertItemImage {
+    width: 84px;
+    min-width: 0;
+    height: 84px;
+    object-fit: cover;
+
+    @include md {
+        width: 100%;
+        min-width: unset;
+        max-width: 84px;
+    }
+}
+
+.dessertItemDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 2px 0;
+    margin: 15px 0 8px;
+    width: 669px;
+    min-width: 0;
+
+    @include md {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.dessertItemTitle {
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    letter-spacing: -0.1px;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.dessertItemInfoRow {
+    display: flex;
+    gap: 0 9px;
+
+    @include xxl {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 9px;
+    }
+}
+
+.dessertItemDescription {
+    margin: 9px 0 0;
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.dessertItemIcon {
+    margin: 20px 0 8px;
+    width: 272px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+        max-width: 272px;
+    }
+}
+
+.dessertItemPrice {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 11px;
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.dessertItemRow1 {
+    display: flex;
+    gap: 0 21px;
+
+    @include md {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 21px;
+    }
+}
+
+.dessertItemImage1 {
+    width: 84px;
+    min-width: 0;
+    height: 84px;
+    object-fit: cover;
+
+    @include md {
+        width: 100%;
+        min-width: unset;
+        max-width: 84px;
+    }
+}
+
+.dessertItemDetails1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2px 0;
+    margin: 15px 0 8px;
+    width: 669px;
+    min-width: 0;
+
+    @include md {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.dessertItemTitle1 {
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.dessertItemInfoRow1 {
+    display: flex;
+    gap: 0 9px;
+
+    @include xxl {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 9px;
+    }
+}
+
+.dessertItemDescription1 {
+    margin: 9px 0 0;
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.dessertItemIcon1 {
+    margin: 20px 0 8px;
+    width: 272px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+        max-width: 272px;
+    }
+}
+
+.dessertItemPrice1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 11px;
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.dessertItemRow2 {
+    display: flex;
+    gap: 0 21px;
+
+    @include md {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 21px;
+    }
+}
+
+.dessertItemImage2 {
+    width: 84px;
+    min-width: 0;
+    height: 84px;
+    object-fit: cover;
+
+    @include md {
+        width: 100%;
+        min-width: unset;
+        max-width: 84px;
+    }
+}
+
+.dessertItemDetails2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2px 0;
+    margin: 15px 0 8px;
+    width: 669px;
+    min-width: 0;
+
+    @include md {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.dessertItemTitle2 {
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.dessertItemInfoRow2 {
+    display: flex;
+    gap: 0 9px;
+
+    @include xxl {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 9px;
+    }
+}
+
+.dessertItemDescription2 {
+    margin: 9px 0 0;
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.dessertItemIcon2 {
+    margin: 20px 0 8px;
+    width: 272px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+        max-width: 272px;
+    }
+}
+
+.dessertItemPrice2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 11px;
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.dessertItemRow3 {
+    display: flex;
+    gap: 0 21px;
+
+    @include md {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 21px;
+    }
+}
+
+.dessertItemImage3 {
+    width: 84px;
+    min-width: 0;
+    height: 84px;
+    object-fit: cover;
+
+    @include md {
+        width: 100%;
+        min-width: unset;
+        max-width: 84px;
+    }
+}
+
+.dessertItemDetails3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2px 0;
+    margin: 15px 0 8px;
+    width: 669px;
+    min-width: 0;
+
+    @include md {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.dessertItemTitle3 {
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    letter-spacing: -0.1px;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.dessertItemInfoRow3 {
+    display: flex;
+    gap: 0 9px;
+
+    @include xxl {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 9px;
+    }
+}
+
+.dessertItemDescription3 {
+    margin: 9px 0 0;
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.dessertItemIcon3 {
+    margin: 20px 0 8px;
+    width: 272px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+        max-width: 272px;
+    }
+}
+
+.dessertItemPrice3 {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 11px;
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}

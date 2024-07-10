@@ -1,0 +1,2138 @@
+@use "../components/utils.scss" as *;
+
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  background-color: #292e36;
+}
+
+.heroImage {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  overflow-x: hidden;
+}
+
+.contentWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  @include md {
+    gap: 150px 0;
+    margin: 65px auto 150px;
+  }
+
+  @include xs {
+    gap: 80px 0;
+    margin: 65px auto 80px;
+  }
+
+  @include tn {
+    gap: 50px 0;
+    margin: 50px auto;
+  }
+}
+
+.topContentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 66px 0;
+
+  @include tn {
+    gap: 50px 0;
+  }
+}
+
+.contactInfoAndReservationWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10px;
+  width: 1377.9375px;
+  max-width: 85%;
+
+  @include lg {
+    flex-direction: column;
+    gap: 30px 10px;
+  }
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  width: 245px;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(222 222 222);
+  text-align: center;
+  padding: 21px 16px;
+  outline: 2px solid rgb(225 177 104);
+  outline-offset: -2px;
+
+  @include lg {
+    width: 100%;
+  }
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.contactIcon {
+  width: 365px;
+  min-width: 0;
+  object-fit: cover;
+
+  @include lg {
+    width: 100%;
+    min-width: unset;
+    max-width: 365px;
+  }
+}
+
+.reservationWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 328px;
+  min-width: 0;
+
+  @include lg {
+    width: 100%;
+    min-width: unset;
+  }
+
+  @include tn {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 8px;
+  }
+}
+
+.reservationIcon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+
+  @include tn {
+    width: 100%;
+    max-width: 50px;
+  }
+}
+
+.reservationButton {
+  display: flex;
+  justify-content: center;
+  min-width: 232px;
+  font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  text-align: center;
+  background-color: rgb(225 177 104);
+  padding: 20px 8px;
+
+  @include tn {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.navAndSocialWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.horizontalLine {
+  width: 100%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(92 97 104);
+}
+
+.navWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 28px 0 0;
+  width: 1260.421875px;
+  max-width: 85%;
+
+  @include lg {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+
+.navMenu {
+  display: flex;
+  justify-content: center;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(222 222 222);
+  text-align: center;
+
+  @include lg {
+    width: 100%;
+  }
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.socialIconWrapper {
+  display: flex;
+  gap: 0 20px;
+  margin: 0 0 2px;
+  width: 158px;
+  min-width: 0;
+
+  @include lg {
+    margin: 0;
+    width: 100%;
+    min-width: unset;
+  }
+
+  @include xs {
+    column-gap: 16px;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.socialIcon1 {
+  margin: 1px 0 0;
+  width: 24px;
+  height: 23px;
+  object-fit: cover;
+}
+
+.socialIcon2 {
+  margin: 1px 0 0;
+  width: 24px;
+  height: 23px;
+  object-fit: cover;
+}
+
+.socialIcon3 {
+  margin: 2px 0 1px;
+  width: 25px;
+  height: 21px;
+  object-fit: cover;
+}
+
+.socialIcon4 {
+  width: 25px;
+  height: 24px;
+  object-fit: cover;
+}
+
+.mainContentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 42px 0;
+  margin: 0 0 0 14.03%;
+  width: 613px;
+  max-width: 85%;
+
+  @include md {
+    margin: 0 auto;
+  }
+}
+
+.heroTextWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.heroTitle {
+  width: 93.64%;
+  font: 700 100px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 52px;
+  }
+
+  @include xxs {
+    font-size: 36px;
+  }
+}
+
+.heroSubtitle {
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(223 223 223);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.viewMenuButton {
+  display: flex;
+  justify-content: center;
+  width: 232px;
+  max-width: 100%;
+  font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  background-color: transparent;
+  text-align: center;
+  padding: 20px 8px;
+  outline: 2px solid rgb(225 177 104);
+  outline-offset: -2px;
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255 248 245);
+}
+
+.mainContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 148px 0;
+  margin: 176px auto;
+  width: 1411.953125px;
+  max-width: 85%;
+
+  @include md {
+    margin: 150px auto;
+  }
+
+  @include xs {
+    gap: 80px 0;
+    margin: 80px auto;
+  }
+
+  @include tn {
+    gap: 50px 0;
+    margin: 50px auto;
+  }
+}
+
+.infoColumnsWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 100%;
+
+  @include lg {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+
+.locationInfoColumn {
+  display: flex;
+  align-items: center;
+  gap: 0 16px;
+  width: fit-content;
+  min-width: 0;
+
+  @include lg {
+    width: 100%;
+    min-width: unset;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.locationInfoBox {
+  display: flex;
+  flex-direction: column;
+  width: 83px;
+  min-width: 50;
+  background: var(--src) center center / cover no-repeat;
+  padding: 16px 15px 15px 16px;
+}
+
+.locationIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.locationTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+  width: fit-content;
+  min-width: 0;
+}
+
+.locationTitle {
+  display: flex;
+  justify-content: center;
+  font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    margin: 0 32px 0 0;
+    font-size: 28px;
+  }
+
+  @include xs {
+    margin: 0 16px 0 0;
+  }
+
+  @include xxs {
+    font-size: 24px;
+  }
+
+  @include tn {
+    margin: 0 8px 0 0;
+  }
+}
+
+.locationAddress {
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(74 74 74);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.hoursInfoColumn {
+  display: flex;
+  align-items: center;
+  gap: 0 16px;
+  width: fit-content;
+  min-width: 0;
+
+  @include lg {
+    width: 100%;
+    min-width: unset;
+  }
+
+  @include tn {
+    flex-direction: column;
+    gap: 30px 8px;
+  }
+}
+
+.hoursInfoBox {
+  display: flex;
+  flex-direction: column;
+  width: 83px;
+  min-width: 0;
+  background: var(--src) center center / cover no-repeat;
+  padding: 20px 20px 19px 19px;
+
+  @include tn {
+    width: 100%;
+    min-width: unset;
+    padding: 20px 8px 19px;
+  }
+}
+
+.hoursIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hoursTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+  width: 279px;
+  min-width: 0;
+
+  @include tn {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.hoursTitle {
+  font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 28px;
+  }
+
+  @include xxs {
+    font-size: 24px;
+  }
+}
+
+.hoursDetails {
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(74 74 74);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.reservationInfoColumn {
+  display: flex;
+  gap: 0 16px;
+  width: fit-content;
+  min-width: 0;
+
+  @include lg {
+    width: 100%;
+    min-width: unset;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.reservationInfoBox {
+  display: flex;
+  flex-direction: column;
+  width: 83px;
+  min-width: 0;
+  background: var(--src) center center / cover no-repeat;
+  background-size: contain;
+  padding: 22px 23px 22px 22px;
+
+  @include tn {
+    padding: 22px 8px;
+  }
+}
+
+.reservationIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.reservationTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+  margin: 12px 0 5px;
+  width: 286px;
+  min-width: 0;
+}
+
+.reservationTitle {
+  font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 28px;
+  }
+
+  @include xxs {
+    font-size: 24px;
+  }
+}
+
+.reservationEmail {
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(74 74 74);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.storyInfoRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 97.31%;
+
+  @include lg {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+
+.storyImage1 {
+  width: 639px;
+  min-width: 0;
+  object-fit: cover;
+
+  @include lg {
+    width: 100%;
+    min-width: unset;
+    max-width: 639px;
+  }
+}
+
+.storyImage2 {
+  width: 1px;
+  object-fit: cover;
+
+  @include lg {
+    display: none;
+    max-width: 1px;
+  }
+}
+
+.storyTextContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 61px;
+  width: 630px;
+  min-width: 0;
+
+  @include lg {
+    margin: 0;
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.storyTitle {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0 2px;
+  max-width: 85%;
+  font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 36px;
+  }
+
+  @include xxs {
+    font-size: 32px;
+  }
+}
+
+.storyDescription {
+  margin: 20px 0 0 2px;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(85 85 85);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.storyHighlightsRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 33px 40px 0 0;
+
+  @include md {
+    margin: 33px 32px 0 0;
+  }
+
+  @include xs {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+    margin: 33px 16px 0 0;
+  }
+
+  @include tn {
+    margin: 33px 8px 0 0;
+  }
+}
+
+.establishmentHighlight {
+  display: flex;
+  flex-direction: column;
+  gap: 18px 0;
+  width: 301px;
+  min-width: 0;
+
+  @include xs {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.establishmentYear {
+  display: flex;
+  justify-content: center;
+  width: 79px;
+  max-width: 85%;
+  font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 36px;
+  }
+
+  @include xxs {
+    font-size: 32px;
+  }
+}
+
+.establishmentHighlightText {
+  margin: 0 0 0 2px;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(85 85 85);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.awardHighlight {
+  display: flex;
+  flex-direction: column;
+  gap: 18px 0;
+  width: 243px;
+  min-width: 0;
+
+  @include xs {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.awardYear {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0 4.5px;
+  width: 79px;
+  max-width: 85%;
+  font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 36px;
+  }
+
+  @include xxs {
+    font-size: 32px;
+  }
+}
+
+.awardHighlightText {
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(85 85 85);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.ownerSignatureSection {
+  display: flex;
+  flex-direction: column;
+  gap: 27px 0;
+  margin: 33px 0 0 2px;
+  width: 203px;
+  max-width: 85%;
+}
+
+.ownerSignatureText {
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.ownerName {
+  font: 400 50px/1.26 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 46px;
+  }
+
+  @include xxs {
+    font-size: 36px;
+  }
+}
+
+.offerSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexColWrapper1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 130px auto 44px;
+  width: 1382.015625px;
+  max-width: 85%;
+
+  @include xs {
+    margin: 80px auto 44px;
+  }
+
+  @include tn {
+    margin: 50px auto 44px;
+  }
+}
+
+.flexColWrapper2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 33px 0;
+  width: 99.57%;
+}
+
+.flexColContainer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 702.0625px;
+  max-width: 85%;
+}
+
+.flexColTopContent {
+  display: flex;
+  flex-direction: column;
+  width: 65.984375px;
+  max-width: 85%;
+}
+
+.horizontalLine1 {
+  width: 100.02%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(225 177 104);
+}
+
+.offerHighlight {
+  display: flex;
+  justify-content: center;
+  margin: 7px 4px 0 3px;
+  font: 500 15px/0.77 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  text-align: center;
+  letter-spacing: 4.05px;
+}
+
+.horizontalLine2 {
+  margin: 4px 0 0;
+  width: 100.02%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(225 177 104);
+}
+
+.offerTitle {
+  display: flex;
+  justify-content: center;
+  margin: 13px 0 0;
+  font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 36px;
+  }
+
+  @include xxs {
+    font-size: 32px;
+  }
+}
+
+.offerSubtitle {
+  display: flex;
+  justify-content: center;
+  margin: 22px 0 0;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(85 85 85);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.flexRowWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 100%;
+
+  @include md {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+
+.contentBox1 {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: auto;
+  min-width: 0;
+  background: var(--src) center center / cover no-repeat;
+
+}
+
+.flexColInnerContainer1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 51px 309px 24px 43px;
+  width: 320px;
+  max-width: 85%;
+  height: 333px;
+
+  @include md {
+    margin: 51px auto 24px;
+    width: 85%;
+  }
+
+  @include tn {
+    margin: 50px auto 24px;
+  }
+}
+
+.contentBoxHeader1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 147px;
+  background: var(--src) center center / cover no-repeat;
+  padding: 0;
+}
+
+.offerHighlightSmall {
+  width: 59px;
+  max-width: 85%;
+  font: 500 15px/0.77 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+}
+
+.offerPriceWrapper1 {
+  font: 700 60px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(0 0 0);
+  text-align: center;
+
+  @include md {
+    font-size: 52px;
+  }
+
+  @include xxs {
+    font-size: 36px;
+  }
+}
+
+.offerPriceWrapper1_box {
+  display: flex;
+  justify-content: center;
+
+  @include md {
+    align-items: flex-start;
+  }
+}
+
+.offerPriceWrapper1_span0 {
+  font: 700 1em/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+}
+
+.offerPriceWrapper1_span1 {
+  font: 700 1em/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(255 125 133);
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 0;
+  width: 198px;
+  max-width: 85%;
+}
+
+.horizontalLine3 {
+  margin: 0 0 0 2px;
+  width: 98.99%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(41 46 54);
+}
+
+.offerDiscountHighlight1 {
+  margin: 7px 19px 0 0;
+  font: 500 15px/0.77 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  letter-spacing: 4.05px;
+
+  @include xs {
+    margin: 7px 16px 0 0;
+  }
+
+  @include tn {
+    margin: 7px 8px 0 0;
+  }
+}
+
+.horizontalLine4 {
+  margin: 3px 0 0 2px;
+  width: 98.99%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(41 46 54);
+}
+
+.offerItemTitle1 {
+  margin: 20px 0 0;
+  font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  letter-spacing: -0.1px;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 36px;
+  }
+
+  @include xxs {
+    font-size: 32px;
+  }
+}
+
+.offerItemDescription1 {
+  margin: 14px 0 0;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(85 85 85);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.contentBox2 {
+  display: flex;
+  flex-direction: column;
+  width: 672px;
+  min-width: 0;
+  background: var(--src) center center / cover no-repeat;
+
+  @include md {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.flexColInnerContainer2 {
+  display: flex;
+  flex-direction: column;
+  margin: 51px 0 24px 6.4%;
+  width: 259px;
+  max-width: 85%;
+
+  @include md {
+    width: 85%;
+  }
+
+  @include tn {
+    margin: 50px 0 24px 6.4%;
+  }
+}
+
+.contentBoxHeader2 {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  max-width: 85%;
+  background: var(--src) center center / cover no-repeat;
+}
+
+.flex_col1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1px 0;
+  margin: 34px 33.5px 48px auto;
+  width: 62.5px;
+
+  @include md {
+    margin: 34px 32px 48px auto;
+  }
+
+  @include xs {
+    margin: 34px 16px 48px auto;
+  }
+
+  @include tn {
+    margin: 34px 8px 48px auto;
+  }
+}
+
+.offerHighlightSmall2 {
+  margin: 0 29.5px 0 0;
+  font: 500 15px/0.77 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+
+  @include xs {
+    margin: 0 16px 0 0;
+  }
+
+  @include tn {
+    margin: 0 8px 0 0;
+  }
+}
+
+.offerPriceWrapper2 {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0 0.5px;
+  font: 700 60px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 52px;
+  }
+
+  @include xxs {
+    font-size: 36px;
+  }
+}
+
+.horizontalLine5 {
+  margin: 0 0 0 2px;
+  width: 98.99%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(41 46 54);
+}
+
+.offerDiscountHighlight2 {
+  margin: 7px 19px 0 0;
+  font: 500 15px/0.77 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  letter-spacing: 4.05px;
+
+  @include xs {
+    margin: 7px 16px 0 0;
+  }
+
+  @include tn {
+    margin: 7px 8px 0 0;
+  }
+}
+
+.horizontalLine6 {
+  margin: 3px 0 0 2px;
+  width: 98.99%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(41 46 54);
+}
+
+.offerItemTitle2 {
+  margin: 20px 0 0;
+  font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 36px;
+  }
+
+  @include xxs {
+    font-size: 32px;
+  }
+}
+
+.offerItemDescription2 {
+  margin: 14px 0 0;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(85 85 85);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.flexColContainer2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 67px 0;
+  margin: 89px 0 0;
+  width: 100%;
+
+  @include xs {
+    margin: 80px 0 0;
+  }
+
+  @include tn {
+    gap: 50px 0;
+    margin: 50px 0 0;
+  }
+}
+
+.flexColWrapper3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px 0;
+  width: 702.0625px;
+  max-width: 85%;
+}
+
+.flexColTopContent2 {
+  display: flex;
+  flex-direction: column;
+  width: 8.55%;
+}
+
+.horizontalLine7 {
+  width: 99.97%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(225 177 104);
+}
+
+.menuHighlight {
+  display: flex;
+  justify-content: center;
+  margin: 7px 2.5px 0;
+  font: 500 15px/0.77 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  text-align: center;
+  letter-spacing: 4.05px;
+}
+
+.horizontalLine8 {
+  margin: 4px 0 0;
+  width: 99.97%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(225 177 104);
+}
+
+.flexColContainer3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px 0;
+  width: 100%;
+}
+
+.popularDishesTitle {
+  display: flex;
+  justify-content: center;
+  font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 36px;
+  }
+
+  @include xxs {
+    font-size: 32px;
+  }
+}
+
+.popularDishesSubtitle {
+  display: flex;
+  justify-content: center;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(85 85 85);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.flexRowContainer1 {
+  display: flex;
+  align-items: center;
+  gap: 0 26px;
+  width: 100%;
+
+  @include md {
+    flex-direction: column;
+    gap: 30px 26px;
+  }
+}
+
+.popularDishCol1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 326px;
+  min-width: 0;
+
+  @include md {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.imageSpaghetti {
+  width: 98.77%;
+  object-fit: cover;
+}
+
+.flexRowSpaghetti {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  width: 95%;
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.dishNameSpaghetti {
+  font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  letter-spacing: -0.1px;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 28px;
+  }
+
+  @include xxs {
+    font-size: 24px;
+  }
+}
+
+.dishPrice {
+  display: flex;
+  justify-content: right;
+  font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  text-align: right;
+
+  @include md {
+    align-items: flex-end;
+    font-size: 28px;
+  }
+
+  @include xxs {
+    font-size: 24px;
+  }
+}
+
+.dividerSpaghetti {
+  margin: 15px 0 0;
+  width: 100%;
+  height: 1px;
+  object-fit: cover;
+}
+
+.dishDescriptionSpaghetti {
+  margin: 16px 0 0;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(85 85 85);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.popularDishCol2 {
+  display: flex;
+  flex-direction: column;
+  width: 326px;
+  min-width: 0;
+
+  @include md {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.imageHotDogs {
+  margin: 0 4px 0 0;
+  width: 98.77%;
+  object-fit: cover;
+}
+
+.flexRowHotDogs {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  width: 95%;
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.dishNameHotDogs {
+  font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 28px;
+  }
+
+  @include xxs {
+    font-size: 24px;
+  }
+}
+
+.dishPrice2 {
+  display: flex;
+  justify-content: right;
+  font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  text-align: right;
+
+  @include md {
+    align-items: flex-end;
+    font-size: 28px;
+  }
+
+  @include xxs {
+    font-size: 24px;
+  }
+}
+
+.dividerHotDogs {
+  margin: 15px 5px 0 0;
+  width: 98.47%;
+  height: 1px;
+  object-fit: cover;
+}
+
+.dishDescriptionHotDogs {
+  margin: 16px 0 0;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(85 85 85);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.popularDishCol3 {
+  display: flex;
+  flex-direction: column;
+  width: 326px;
+  min-width: 0;
+
+  @include md {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.imageCitrusTea {
+  margin: 0 4px 0 0;
+  width: 98.77%;
+  object-fit: cover;
+}
+
+.flexRowCitrusTea {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  width: 95%;
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.dishNameCitrusTea {
+  font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 28px;
+  }
+
+  @include xxs {
+    font-size: 24px;
+  }
+}
+
+.dishPrice3 {
+  display: flex;
+  justify-content: right;
+  font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  text-align: right;
+
+  @include md {
+    align-items: flex-end;
+    font-size: 28px;
+  }
+
+  @include xxs {
+    font-size: 24px;
+  }
+}
+
+.dividerCitrusTea {
+  margin: 15px 5px 0 0;
+  width: 98.47%;
+  height: 1px;
+  object-fit: cover;
+}
+
+.dishDescriptionCitrusTea {
+  margin: 16px 0 0;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(85 85 85);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.popularDishCol4 {
+  display: flex;
+  flex-direction: column;
+  width: 326px;
+  min-width: 0;
+
+  @include md {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.imageSandwich {
+  margin: 0 4px 0 0;
+  width: 98.77%;
+  object-fit: cover;
+}
+
+.flexRowSandwich {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  width: 95%;
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.dishNameSandwich {
+  font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 28px;
+  }
+
+  @include xxs {
+    font-size: 24px;
+  }
+}
+
+.dishPrice4 {
+  display: flex;
+  justify-content: right;
+  font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  text-align: right;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 28px;
+  }
+
+  @include xxs {
+    font-size: 24px;
+  }
+}
+
+.dividerSandwich {
+  margin: 15px 5px 0 0;
+  width: 98.47%;
+  height: 1px;
+  object-fit: cover;
+}
+
+.dishDescriptionSandwich {
+  margin: 16px 0 0;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(85 85 85);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.seeAllDishesBtn {
+  display: flex;
+  justify-content: center;
+  margin: 67px auto 0;
+  width: 232px;
+  max-width: 100%;
+  font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(225 177 104);
+  text-align: center;
+  padding: 20px 8px;
+  background-color: transparent;
+  outline: 2px solid rgb(225 177 104);
+  outline-offset: -2px;
+}
+
+.testimonialSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1px 0;
+}
+
+.heroImageSplash {
+  margin: 0 auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgb(41 46 54);
+}
+
+.contentColumn {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0 99px auto;
+  width: 85.94%;
+
+  @include xs {
+    margin: 80px 0 80px auto;
+  }
+
+  @include tn {
+    margin: 50px 0 50px auto;
+  }
+}
+
+.headerColumn {
+  display: flex;
+  flex-direction: column;
+  width: 702px;
+  max-width: 85%;
+}
+
+.highlightColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 145px;
+  max-width: 85%;
+}
+
+.horizontalLineTop {
+  width: 100%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(225 177 104);
+}
+
+.testimonialHighlight {
+  display: flex;
+  justify-content: center;
+  margin: 7px 0 0;
+  font: 500 15px/0.77 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+  letter-spacing: 4.05px;
+}
+
+.horizontalLineBottom {
+  margin: 4px 0 0;
+  width: 100%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(225 177 104);
+}
+
+.testimonialTitle {
+  display: flex;
+  justify-content: center;
+  margin: 19px 0 0 3.5px;
+  width: 333px;
+  max-width: 85%;
+  font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 36px;
+  }
+
+  @include xxs {
+    font-size: 32px;
+  }
+}
+
+.testimonialSubtitle {
+  margin: 20px 0 0;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.testimonialRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 48px 0 0;
+
+  @include xl {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+
+.testimonialBox1 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(52 57 66);
+
+  @include xl {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.testimonialContentColumn1 {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+
+  @include xl {
+    width: 85%;
+  }
+
+  @include tn {
+    margin: 50px auto 17px;
+  }
+}
+
+.testimonialHeaderRow1 {
+  display: flex;
+  align-items: center;
+  gap: 0 24px;
+
+  @include xs {
+    column-gap: 16px;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.testimonialImage1 {
+  width: 114px;
+  min-width: 0;
+  height: 112px;
+  object-fit: cover;
+}
+
+.testimonialTextColumn1 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px 0;
+  width: 177px;
+  min-width: 0;
+}
+
+.testimonialName1 {
+  font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 28px;
+  }
+
+  @include xxs {
+    font-size: 24px;
+  }
+}
+
+.testimonialLocation1 {
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(225 177 104);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.testimonialLine1 {
+  margin: 31px 0 0;
+  width: 100%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(121 126 137);
+}
+
+.testimonialContent1 {
+  margin: 25px 0 0;
+  font: 400 25px/1.46 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 24px;
+  }
+
+  @include xxs {
+    font-size: 20px;
+  }
+}
+
+.testimonialBox2 {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: rgb(52 57 66);
+
+  @include xl {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.testimonialContentColumn2 {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+
+  @include xl {
+    width: 85%;
+  }
+
+  @include tn {
+    margin: 50px auto;
+  }
+}
+
+.testimonialHeaderRow2 {
+  display: flex;
+  align-items: center;
+  gap: 0 24px;
+
+  @include xs {
+    column-gap: 16px;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.testimonialImage2 {
+  width: 114px;
+  min-width: 0;
+  height: 112px;
+  object-fit: cover;
+}
+
+.testimonialTextColumn2 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px 0;
+  width: 130px;
+  min-width: 0;
+}
+
+.testimonialName2 {
+  font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 28px;
+  }
+
+  @include xxs {
+    font-size: 24px;
+  }
+}
+
+.testimonialLocation2 {
+  margin: 0 1px 0 0;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(225 177 104);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.testimonialLine2 {
+  margin: 31px 0 0;
+  width: 100%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(121 126 137);
+}
+
+.testimonialContent2 {
+  margin: 25px 0 0;
+  font: 400 25px/1.46 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 24px;
+  }
+
+  @include xxs {
+    font-size: 20px;
+  }
+}
+
+.testimonialBox3 {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: rgb(52 57 66);
+
+  @include xl {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.testimonialContentColumn3 {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+
+  @include xl {
+    width: 85%;
+  }
+
+  @include tn {
+    margin: 50px auto;
+  }
+}
+
+.testimonialHeaderRow3 {
+  display: flex;
+  align-items: center;
+  gap: 0 24px;
+
+  @include xs {
+    column-gap: 16px;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.testimonialImage3 {
+  width: 114px;
+  min-width: 0;
+  height: 112px;
+  object-fit: cover;
+}
+
+.testimonialTextColumn3 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px 0;
+  width: 162px;
+  min-width: 0;
+}
+
+.testimonialName3 {
+  font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 28px;
+  }
+
+  @include xxs {
+    font-size: 24px;
+  }
+}
+
+.testimonialLocation3 {
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(225 177 104);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.testimonialLine3 {
+  margin: 31px 0 0;
+  width: 100%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(121 126 137);
+}
+
+.testimonialContent3 {
+  margin: 25px 0 0;
+  font: 400 25px/1.46 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 24px;
+  }
+
+  @include xxs {
+    font-size: 20px;
+  }
+}
+
+.svgImage {
+  margin: 50px 0 0 40.3%;
+  width: 50px;
+  height: 20px;
+  object-fit: cover;
+}

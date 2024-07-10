@@ -1,0 +1,378 @@
+@use "../components/utils.scss" as *;
+
+.menuOverviewSection {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41 46 54);
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 3%;
+
+    @include xs {
+        margin: 65px auto 80px;
+    }
+
+    @include tn {
+        margin: 50px auto;
+    }
+}
+
+.menuSection {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    @include tn {
+        margin: 50px 0 0;
+    }
+}
+
+.horizontalLineBeforeTitle {
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    background-color: rgb(225 177 104);
+}
+
+.menuTitle {
+    display: flex;
+    justify-content: center;
+    margin: 11px 0 0 1px;
+    font: 700 60px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(255 255 255);
+    text-align: center;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 52px;
+    }
+
+    @include xxs {
+        font-size: 36px;
+    }
+}
+
+.horizontalLineAfterTitle {
+    margin: 9px 0 0;
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    background-color: rgb(225 177 104);
+}
+
+.reservationSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.informationContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10px;
+    margin: 200px auto 67px;
+    width: 1376.0625px;
+    max-width: 85%;
+
+    @include md {
+        flex-direction: column;
+        gap: 30px 10px;
+        margin: 150px auto 67px;
+    }
+
+    @include xs {
+        margin: 80px auto 67px;
+    }
+
+    @include tn {
+        margin: 50px auto;
+    }
+}
+
+.reservationContent {
+    display: flex;
+    flex-direction: column;
+    width: 738px;
+    min-width: 0;
+
+    @include md {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.headerLayout {
+    display: flex;
+    flex-direction: column;
+    width: 143px;
+    max-width: 85%;
+}
+
+.topLine {
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    background-color: rgb(225 177 104);
+}
+
+.reservationHighlight {
+    margin: 6px 18px 0 0;
+    font: 500 15px/0.77 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    letter-spacing: 4.05px;
+
+    @include xs {
+        margin: 6px 16px 0 0;
+    }
+
+    @include tn {
+        margin: 6px 8px 0 0;
+    }
+}
+
+.bottomLine {
+    margin: 4px 0 0;
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    background-color: rgb(225 177 104);
+}
+
+.heroTitle {
+    margin: 19px 0 0;
+    font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 36px;
+    }
+
+    @include xxs {
+        font-size: 32px;
+    }
+}
+
+.subtitle {
+    margin: 14px 0 0;
+    width: 538px;
+    max-width: 85%;
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.reservationGrid {
+    display: grid;
+    align-content: start;
+    gap: 35px 28px;
+    margin: 25px 0 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    @include xs {
+        column-gap: 16px;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.nameItem {
+    grid-row: span 1;
+    grid-column: span 1;
+    font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+    padding: 20px 21px;
+    outline: 1px solid rgb(41 46 54);
+    outline-offset: -1px;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 20px;
+    }
+
+    @include xs {
+        padding: 20px 16px;
+    }
+
+    @include xxs {
+        font-size: 18px;
+    }
+
+    @include tn {
+        padding: 20px 8px;
+    }
+}
+
+.emailItem {
+    grid-row: span 1;
+    grid-column: span 1;
+    font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+    padding: 20px 23px;
+    outline: 1px solid rgb(41 46 54);
+    outline-offset: -1px;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 20px;
+    }
+
+    @include xs {
+        padding: 20px 16px;
+    }
+
+    @include xxs {
+        font-size: 18px;
+    }
+
+    @include tn {
+        padding: 20px 8px;
+    }
+}
+
+.phoneItem {
+    grid-row: span 1;
+    grid-column: span 1;
+    font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+    padding: 20px 21px;
+    outline: 1px solid rgb(41 46 54);
+    outline-offset: -1px;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 20px;
+    }
+
+    @include xs {
+        padding: 20px 16px;
+    }
+
+    @include xxs {
+        font-size: 18px;
+    }
+
+    @include tn {
+        padding: 20px 8px;
+    }
+}
+
+.dateItem {
+    grid-row: span 1;
+    grid-column: span 1;
+    font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+    padding: 20px 23px;
+    outline: 1px solid rgb(41 46 54);
+    outline-offset: -1px;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 20px;
+    }
+
+    @include xs {
+        padding: 20px 16px;
+    }
+
+    @include xxs {
+        font-size: 18px;
+    }
+
+    @include tn {
+        padding: 20px 8px;
+    }
+}
+
+.timeItem {
+    grid-row: span 1;
+    grid-column: span 1;
+    font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+    padding: 20px 21px;
+    outline: 1px solid rgb(41 46 54);
+    outline-offset: -1px;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 20px;
+    }
+
+    @include xs {
+        padding: 20px 16px;
+    }
+
+    @include xxs {
+        font-size: 18px;
+    }
+
+    @include tn {
+        padding: 20px 8px;
+    }
+}
+
+.personItem {
+    grid-row: span 1;
+    grid-column: span 1;
+    font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+    padding: 20px 23px;
+    outline: 1px solid rgb(41 46 54);
+    outline-offset: -1px;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 20px;
+    }
+
+    @include xs {
+        padding: 20px 16px;
+    }
+
+    @include xxs {
+        font-size: 18px;
+    }
+
+    @include tn {
+        padding: 20px 8px;
+    }
+}
+
+.bookTableBtn {
+    display: flex;
+    justify-content: center;
+    margin: 48px 0 0;
+    width: 201px;
+    max-width: 100%;
+    font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(225 177 104);
+    text-align: center;
+    padding: 20px 34px;
+    outline: 2px solid rgb(225 177 104);
+    background-color: transparent;
+    outline-offset: -2px;
+}
+
+.restaurantImage {
+    width: 582px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include md {
+        width: 100%;
+        min-width: unset;
+        max-width: 582px;
+    }
+}

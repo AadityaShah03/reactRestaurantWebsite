@@ -1,0 +1,610 @@
+@use "../utils" as *;
+
+.reservationSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1px 0;
+}
+
+.reservationImageBox {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  background: var(--src) center center / cover no-repeat;
+}
+
+.reservationContentBox {
+  display: flex;
+  flex-direction: column;
+  margin: 194px auto 197px;
+  width: 1056px;
+  max-width: 85%;
+  background-color: rgb(41 46 54 / 94.9%);
+
+  @include md {
+    margin: 150px auto;
+  }
+
+  @include xs {
+    margin: 80px auto;
+  }
+
+  @include tn {
+    margin: 50px auto;
+  }
+}
+
+.reservationContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 151px auto 138px;
+  width: 743.9375px;
+  max-width: 85%;
+
+  @include md {
+    margin: 150px auto 138px;
+  }
+
+  @include xs {
+    margin: 80px auto;
+  }
+
+  @include tn {
+    margin: 50px auto;
+  }
+}
+
+.reservationTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px 0;
+  width: 334.984375px;
+  max-width: 85%;
+}
+
+.reservationHighlightBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 146.984375px;
+  max-width: 85%;
+}
+
+.separatorLine {
+  width: 100.01%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(225 177 104);
+}
+
+.reservationHighlight {
+  display: flex;
+  justify-content: center;
+  margin: 6px 0 0;
+  font: 500 15px/0.77 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+  letter-spacing: 4.05px;
+}
+
+.separatorLine1 {
+  margin: 5px 0 0;
+  width: 100.01%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(225 177 104);
+}
+
+.reservationTitle {
+  display: flex;
+  justify-content: center;
+  font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 36px;
+  }
+
+  @include xxs {
+    font-size: 32px;
+  }
+}
+
+.reservationInputRow {
+  display: flex;
+  gap: 0 28px;
+  margin: 41px 0 0;
+  width: 100%;
+
+  @include sm {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 28px;
+  }
+}
+
+.nameInputLabel {
+  width: 358px;
+  font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  padding: 20px 21px;
+  outline: 1px solid rgb(133 133 133);
+  outline-offset: -1px;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 20px;
+  }
+
+  @include sm {
+    width: 100%;
+  }
+
+  @include xs {
+    padding: 20px 16px;
+  }
+
+  @include xxs {
+    font-size: 18px;
+  }
+
+  @include tn {
+    padding: 20px 8px;
+  }
+}
+
+.emailInputLabel {
+  width: 358px;
+  font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  padding: 20px;
+  outline: 1px solid rgb(133 133 133);
+  outline-offset: -1px;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 20px;
+  }
+
+  @include sm {
+    width: 100%;
+  }
+
+  @include xs {
+    padding: 20px 16px;
+  }
+
+  @include xxs {
+    font-size: 18px;
+  }
+
+  @include tn {
+    padding: 20px 8px;
+  }
+}
+
+.reservationDetailsRow {
+  display: flex;
+  gap: 0 24px;
+  margin: 34px 0 0;
+  width: 100%;
+
+  @include sm {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 24px;
+  }
+}
+
+.personInputLabel {
+  width: 232px;
+  font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  padding: 20px 21px;
+  outline: 1px solid rgb(133 133 133);
+  outline-offset: -1px;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 20px;
+  }
+
+  @include sm {
+    width: 100%;
+  }
+
+  @include xxs {
+    font-size: 18px;
+  }
+
+  @include tn {
+    padding: 20px 8px;
+  }
+}
+
+.timingInputLabel {
+  width: 232px;
+  font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  padding: 20px 21px;
+  outline: 1px solid rgb(133 133 133);
+  outline-offset: -1px;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 20px;
+  }
+
+  @include sm {
+    width: 100%;
+  }
+
+  @include xxs {
+    font-size: 18px;
+  }
+
+  @include tn {
+    padding: 20px 8px;
+  }
+}
+
+.dateInputLabel {
+  width: 232px;
+  font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  padding: 20px 21px;
+  outline: 1px solid rgb(133 133 133);
+  outline-offset: -1px;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 20px;
+  }
+
+  @include sm {
+    width: 100%;
+  }
+
+  @include xxs {
+    font-size: 18px;
+  }
+
+  @include tn {
+    padding: 20px 8px;
+  }
+}
+
+.bookTableBtn {
+  display: flex;
+  justify-content: center;
+  margin: 34px auto 0;
+  width: 232px;
+  max-width: 100%;
+  font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  text-align: center;
+  background-color: rgb(255 255 255);
+  padding: 20px 8px;
+}
+
+.servicesSection {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  background-color: rgb(41 46 54);
+}
+
+.servicesContentRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10px;
+  margin: 172px auto 171px;
+  width: 1391.03125px;
+  max-width: 85%;
+
+  @include lg {
+    flex-direction: column;
+    gap: 30px 10px;
+  }
+
+  @include md {
+    margin: 150px auto;
+  }
+
+  @include xs {
+    margin: 80px auto;
+  }
+
+  @include tn {
+    margin: 50px auto;
+  }
+}
+
+.servicesContent {
+  display: flex;
+  flex-direction: column;
+  width: 421px;
+  min-width: 0;
+
+  @include lg {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.servicesHighlightBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 179px;
+  max-width: 85%;
+}
+
+.separatorLine5 {
+  width: 100%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(225 177 104);
+}
+
+.servicesHighlight {
+  display: flex;
+  justify-content: center;
+  margin: 6px 0 0;
+  font: 500 15px/0.77 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+  letter-spacing: 4.05px;
+}
+
+.separatorLine51 {
+  margin: 5px 0 0;
+  width: 100%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(225 177 104);
+}
+
+.servicesTitle {
+  margin: 19px 0 0;
+  font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 36px;
+  }
+
+  @include xxs {
+    font-size: 32px;
+  }
+}
+
+.servicesSubtitle {
+  margin: 20px 0 0;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.servicesCardRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 851px;
+  min-width: 0;
+
+  @include lg {
+    width: 100%;
+    min-width: unset;
+  }
+
+  @include sm {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+
+.serviceCard1 {
+  display: flex;
+  flex-direction: column;
+  width: 257px;
+  min-width: 0;
+  background-color: rgb(50 56 65);
+
+  @include sm {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.serviceCardContent1 {
+  display: flex;
+  flex-direction: column;
+  margin: 22px 23px;
+  background-color: rgb(41 46 54);
+
+  @include xs {
+    margin: 22px 16px;
+  }
+
+  @include tn {
+    margin: 22px 8px;
+  }
+}
+
+.serviceCardDetail1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px 0;
+  margin: 47px auto;
+  width: 104px;
+  max-width: 85%;
+}
+
+.serviceImage1 {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+}
+
+.serviceTitle1 {
+  display: flex;
+  justify-content: center;
+  font: 700 25px/1.19 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+  letter-spacing: -0.4px;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 24px;
+  }
+
+  @include xxs {
+    font-size: 20px;
+  }
+}
+
+.serviceCard2 {
+  display: flex;
+  flex-direction: column;
+  width: 257px;
+  min-width: 0;
+  background-color: rgb(50 56 65);
+
+  @include sm {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.serviceCardContent2 {
+  display: flex;
+  flex-direction: column;
+  margin: 22px 23px;
+  background-color: rgb(41 46 54);
+
+  @include xs {
+    margin: 22px 16px;
+  }
+
+  @include tn {
+    margin: 22px 8px;
+  }
+}
+
+.serviceCardDetail2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px 0;
+  margin: 47px 33px;
+
+  @include md {
+    margin: 47px 32px;
+  }
+
+  @include xs {
+    margin: 47px 16px;
+  }
+
+  @include tn {
+    margin: 47px 8px;
+  }
+}
+
+.serviceImage2 {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+}
+
+.serviceTitle2 {
+  display: flex;
+  justify-content: center;
+  font: 700 25px/1.2 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 24px;
+  }
+
+  @include xxs {
+    font-size: 20px;
+  }
+}
+
+.serviceCard3 {
+  display: flex;
+  flex-direction: column;
+  width: 257px;
+  min-width: 0;
+  background-color: rgb(50 56 65);
+
+  @include sm {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.serviceCardContent3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px 0;
+  margin: 22px 23px;
+  background-color: rgb(41 46 54);
+  padding: 47px 27px 47px 28px;
+
+  @include xs {
+    margin: 22px 16px;
+  }
+
+  @include tn {
+    margin: 22px 8px;
+  }
+}
+
+.serviceImage3 {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+}
+
+.serviceTitle3 {
+  display: flex;
+  justify-content: center;
+  font: 700 25px/1.2 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 24px;
+  }
+
+  @include xxs {
+    font-size: 20px;
+  }
+}

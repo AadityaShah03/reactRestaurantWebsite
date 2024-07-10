@@ -1,0 +1,270 @@
+@use "../utils" as *;
+
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(41 46 54);
+  align-items: center;
+  object-fit: contain;
+}
+
+.reservationIcon {
+  width: 50px;
+  height: 68px;
+  object-fit: cover;
+
+  @include tn {
+    width: 100%;
+    max-width: 50px;
+  }
+}
+
+.reservationWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 328px;
+  min-width: 0;
+
+  @include lg {
+    width: 100%;
+    min-width: unset;
+  }
+
+  @include tn {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 8px;
+  }
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 90%;
+  object-position: center;
+}
+
+.headerControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10px;
+  margin: 0 auto;
+  width: 85%;
+  max-width: 85%;
+
+  @include sm {
+    flex-direction: column;
+    gap: 30px 10px;
+  }
+}
+
+.callButton {
+  display: flex;
+  justify-content: center;
+  min-width: 245px;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(222 222 222);
+  text-align: center;
+  padding: 21px 34px;
+  outline: 2px solid rgb(225 177 104);
+  background-color: transparent;
+  outline-offset: -2px;
+
+  @include sm {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.logoImage {
+  width: 365px;
+  min-width: 0;
+  object-fit: cover;
+
+  @include sm {
+    width: 100%;
+    min-width: unset;
+    max-width: 365px;
+  }
+}
+
+.reservationButton {
+  display: flex;
+  justify-content: center;
+  min-width: 232px;
+  font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(41 46 54);
+  text-align: center;
+  background-color: rgb(225 177 104);
+  outline: 2px solid rgb(225 177 104);
+  padding: 20px 8px;
+
+  @include sm {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+
+  @include tn {
+    margin: 50px 0 0;
+  }
+}
+
+.horizontalLine {
+  width: 95%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(92 97 104);
+  object-fit: contain;
+}
+
+.navigationContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  max-width: 85%;
+
+  @include lg {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+
+.navigationLinks {
+  display: flex;
+  justify-content: center;
+  font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+  color: rgb(222 222 222);
+  text-align: center;
+  text-decoration: none;
+
+  @include lg {
+    width: 100%;
+  }
+
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  @include xxs {
+    font-size: 16px;
+  }
+}
+
+.socialMediaContainer {
+  display: flex;
+  gap: 0 20px;
+  padding: 25px;
+  width: fit-content;
+  min-width: 0;
+
+  @include lg {
+    margin: 0;
+    width: 100%;
+    min-width: unset;
+  }
+
+  @include xs {
+    column-gap: 16px;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.socialMediaImage {
+  object-fit: fill;
+}
+
+.horizontalLine1 {
+  width: 95%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(92 97 104);
+  object-fit: contain;
+}
+
+.heroContent {
+  display: flex;
+  gap: 0 17px;
+  margin: 78px 33.96% 0 auto;
+  width: 546px;
+  max-width: 85%;
+
+  @include xxl {
+    margin: 78px auto 0;
+  }
+
+  @include xs {
+    column-gap: 16px;
+  }
+
+  @include tn {
+    column-gap: 8px;
+    margin: 50px auto 0;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 479px;
+  min-width: 0;
+}
+
+.titleHorizontalLine {
+  width: 253px;
+  max-width: 85%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(225 177 104);
+}
+
+.heroTitle {
+  display: flex;
+  justify-content: center;
+  margin: 11px 0 0;
+  font: 700 60px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+
+  @include md {
+    align-items: flex-start;
+    font-size: 52px;
+  }
+
+  @include xxs {
+    font-size: 36px;
+  }
+}
+
+.subtitleHorizontalLine {
+  margin: 9px 0 0;
+  width: 253px;
+  max-width: 85%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(225 177 104);
+}
+
+.heroImage {
+  margin: 1px 0 0;
+  width: 50px;
+  height: 68px;
+  object-fit: cover;
+}

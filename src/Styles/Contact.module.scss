@@ -1,0 +1,947 @@
+@use "../components/utils.scss" as *;
+
+.menuOverviewSection {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41 46 54);
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 3%;
+
+    @include xs {
+        margin: 65px auto 80px;
+    }
+
+    @include tn {
+        margin: 50px auto;
+    }
+}
+
+.menuSection {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    @include tn {
+        margin: 50px 0 0;
+    }
+}
+
+.horizontalLineBeforeTitle {
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    background-color: rgb(225 177 104);
+}
+
+.menuTitle {
+    display: flex;
+    justify-content: center;
+    margin: 11px 0 0 1px;
+    font: 700 60px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(255 255 255);
+    text-align: center;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 52px;
+    }
+
+    @include xxs {
+        font-size: 36px;
+    }
+}
+
+.horizontalLineAfterTitle {
+    margin: 9px 0 0;
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    background-color: rgb(225 177 104);
+}
+
+.contactUsSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.rootFlexColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 200px 0;
+    margin: 201px auto 129px;
+    width: 1377.015625px;
+    max-width: 85%;
+
+    @include md {
+        gap: 150px 0;
+        margin: 150px auto 129px;
+    }
+
+    @include xs {
+        gap: 80px 0;
+        margin: 80px auto;
+    }
+
+    @include tn {
+        gap: 50px 0;
+        margin: 50px auto;
+    }
+}
+
+.contentRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10px;
+    margin: 0 2px 0 0;
+
+    @include lg {
+        flex-direction: column;
+        gap: 30px 10px;
+    }
+}
+
+.contactInfoBox {
+    display: flex;
+    flex-direction: column;
+    width: 581px;
+    min-width: 0;
+    background-color: rgb(255 248 245);
+
+    @include lg {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.contactInfoColumn {
+    display: flex;
+    flex-direction: column;
+    margin: 73px auto;
+    width: 434.984375px;
+    max-width: 85%;
+
+    @include lg {
+        width: 85%;
+    }
+
+    @include tn {
+        margin: 50px auto;
+    }
+}
+
+.contactTitle {
+    font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 36px;
+    }
+
+    @include xxs {
+        font-size: 32px;
+    }
+}
+
+.contactSubtitle {
+    margin: 22px 0 0;
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.addressRow {
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    margin: 29px 0 0;
+
+    @include tn {
+        column-gap: 8px;
+    }
+}
+
+.addressIconBox {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: var(--src) center center / contain no-repeat;
+    width: 43px;
+    padding: 10px;
+}
+
+.addressIconImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subtitle1 {
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(74 74 74);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.emailRow {
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    margin: 30px 0 0;
+
+    @include tn {
+        flex-direction: column;
+        gap: 30px 8px;
+    }
+}
+
+.emailIconBox {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: var(--src) center center / contain no-repeat;
+    width: 43px;
+    padding: 16px 14px 16px 13px;
+
+    @include tn {
+        width: 100%;
+        min-width: unset;
+        padding: 16px 8px;
+    }
+}
+
+.emailIconImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include lg {
+        margin: 0 auto;
+    }
+}
+
+.subtitle11 {
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(74 74 74);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+
+    @include tn {
+        width: 100%;
+    }
+}
+
+.phoneRow {
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    margin: 30px 0 0;
+
+    @include tn {
+        column-gap: 8px;
+    }
+}
+
+.phoneIconBox {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: var(--src) center center / contain no-repeat;
+    width: 43px;
+    padding: 9px 9px 7px 7px;
+}
+
+.phoneIconImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.phoneText {
+    display: flex;
+    align-items: center;
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(74 74 74);
+
+    @include md {
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.socialMediaRow {
+    display: flex;
+    gap: 0 13px;
+    margin: 30px 0 0;
+
+    @include tn {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 8px;
+    }
+}
+
+.socialMediaIcon1 {
+    width: 52px;
+    height: 52px;
+    object-fit: cover;
+
+    @include tn {
+        width: 100%;
+        max-width: 52px;
+    }
+}
+
+.socialMediaIcon2 {
+    width: 51px;
+    height: 52px;
+    object-fit: cover;
+
+    @include tn {
+        width: 100%;
+        max-width: 51px;
+    }
+}
+
+.socialMediaIcon3 {
+    width: 52px;
+    height: 52px;
+    object-fit: cover;
+
+    @include tn {
+        width: 100%;
+        max-width: 52px;
+    }
+}
+
+.socialMediaIcon4 {
+    width: 52px;
+    height: 52px;
+    object-fit: cover;
+
+    @include tn {
+        width: 100%;
+        max-width: 52px;
+    }
+}
+
+.questionColumn {
+    display: flex;
+    flex-direction: column;
+    width: 744px;
+    min-width: 0;
+
+    @include lg {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.mailUsColumn {
+    display: flex;
+    flex-direction: column;
+    width: 94px;
+    max-width: 85%;
+}
+
+.line1 {
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    background-color: rgb(225 177 104);
+}
+
+.mailUsTitle {
+    display: flex;
+    justify-content: center;
+    margin: 6px 3px 0;
+    font: 500 15px/0.77 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+    letter-spacing: 3.54px;
+}
+
+.line11 {
+    margin: 5px 0 0;
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    background-color: rgb(225 177 104);
+}
+
+.questionTitle {
+    display: flex;
+    justify-content: center;
+    margin: 19px 0 0;
+    width: 282px;
+    max-width: 85%;
+    font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 36px;
+    }
+
+    @include xxs {
+        font-size: 32px;
+    }
+}
+
+.messageColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 34px 0;
+    margin: 41px 0 0;
+}
+
+.contactFormGrid {
+    display: grid;
+    align-content: start;
+    gap: 34px 28px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    @include xs {
+        column-gap: 16px;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.contactFormName {
+    grid-row: span 1;
+    grid-column: span 1;
+    font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+    padding: 20px 21px;
+    outline: 1px solid rgb(196 196 196);
+    outline-offset: -1px;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 20px;
+    }
+
+    @include xs {
+        padding: 20px 16px;
+    }
+
+    @include xxs {
+        font-size: 18px;
+    }
+
+    @include tn {
+        padding: 20px 8px;
+    }
+}
+
+.contactFormEmail {
+    grid-row: span 1;
+    grid-column: span 1;
+    font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+    padding: 20px;
+    outline: 1px solid rgb(196 196 196);
+    outline-offset: -1px;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 20px;
+    }
+
+    @include xs {
+        padding: 20px 16px;
+    }
+
+    @include xxs {
+        font-size: 18px;
+    }
+
+    @include tn {
+        padding: 20px 8px;
+    }
+}
+
+.contactFormSubject {
+    grid-row: span 1;
+    grid-column: span 1;
+    font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+    padding: 20px 21px;
+    outline: 1px solid rgb(196 196 196);
+    outline-offset: -1px;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 20px;
+    }
+
+    @include xs {
+        padding: 20px 16px;
+    }
+
+    @include xxs {
+        font-size: 18px;
+    }
+
+    @include tn {
+        padding: 20px 8px;
+    }
+}
+
+.contactFormPhone {
+    grid-row: span 1;
+    grid-column: span 1;
+    font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+    padding: 20px;
+    outline: 1px solid rgb(196 196 196);
+    outline-offset: -1px;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 20px;
+    }
+
+    @include xs {
+        padding: 20px 16px;
+    }
+
+    @include xxs {
+        font-size: 18px;
+    }
+
+    @include tn {
+        padding: 20px 8px;
+    }
+}
+
+.contactFormMessage {
+    font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+    padding: 20px 21px 120px;
+    outline: 1px solid rgb(196 196 196);
+    outline-offset: -1px;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 20px;
+    }
+
+    @include xs {
+        padding: 20px 16px 80px;
+    }
+
+    @include xxs {
+        font-size: 18px;
+    }
+
+    @include tn {
+        padding: 20px 8px 50px;
+    }
+}
+
+.sendButton {
+    display: flex;
+    justify-content: center;
+    margin: 34px 0 0;
+    width: 184px;
+    max-width: 100%;
+    font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+    padding: 20px 8px;
+    outline: 2px solid rgb(225 177 104);
+    outline-offset: -2px;
+}
+
+.visitUsColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.visitUsColumnHeader {
+    display: flex;
+    flex-direction: column;
+    width: 99px;
+    max-width: 85%;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    background-color: rgb(225 177 104);
+}
+
+.visitUsTitle {
+    display: flex;
+    justify-content: center;
+    margin: 6px 1px 0 0;
+    font: 500 15px/0.77 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+    letter-spacing: 3.54px;
+}
+
+.line2 {
+    margin: 4px 0 0;
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    background-color: rgb(225 177 104);
+}
+
+.branchesTitle {
+    display: flex;
+    justify-content: center;
+    margin: 19px 0 0;
+    font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+    letter-spacing: -0.1px;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 36px;
+    }
+
+    @include xxs {
+        font-size: 32px;
+    }
+}
+
+.branchesRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    margin: 47px 0 0;
+    width: 100%;
+
+    @include xxl {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 10px;
+    }
+}
+
+.branchColumn1 {
+    display: flex;
+    gap: 0 1px;
+    width: 663px;
+    min-width: 0;
+
+    @include xxl {
+        width: 100%;
+        min-width: unset;
+    }
+
+    @include sm {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 1px;
+    }
+}
+
+.branchBox1 {
+    display: flex;
+    flex-direction: column;
+    width: 317px;
+    min-width: 0;
+    background-color: rgb(255 255 255);
+    outline: 1px solid rgb(196 196 196);
+    outline-offset: -1px;
+
+    @include sm {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.branchInfoColumn {
+    display: flex;
+    flex-direction: column;
+    margin: 101px 37px 102px 30px;
+
+    @include md {
+        margin: 101px 32px 102px 30px;
+    }
+
+    @include xs {
+        margin: 80px 16px;
+    }
+
+    @include tn {
+        margin: 50px 8px;
+    }
+}
+
+.branchTitle1 {
+    font: 700 30px/1.2 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.branchAddress1 {
+    margin: 19px 0 0;
+    width: 182px;
+    max-width: 85%;
+    font: 400 18px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(74 74 74);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 16px;
+    }
+}
+
+.branchContactRow1 {
+    display: flex;
+    gap: 0 10px;
+    margin: 35px 0 0;
+
+    @include tn {
+        column-gap: 8px;
+    }
+}
+
+.branchContactIcon1 {
+    margin: 3px 0 2px;
+    width: 24px;
+    height: 18px;
+    object-fit: cover;
+}
+
+.branchContactEmail1 {
+    font: 400 18px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(74 74 74);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 16px;
+    }
+}
+
+.branchPhoneRow1 {
+    display: flex;
+    gap: 0 10px;
+    margin: 35px 0 0;
+
+    @include tn {
+        column-gap: 8px;
+    }
+}
+
+.branchPhoneIcon1 {
+    width: 24px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.branchPhoneText1 {
+    margin: 1px 0;
+    font: 400 18px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(74 74 74);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 16px;
+    }
+}
+
+.branchImage1 {
+    width: 345px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include sm {
+        width: 100%;
+        min-width: unset;
+        max-width: 345px;
+    }
+}
+
+.branchColumn2 {
+    display: flex;
+    gap: 0 1px;
+    width: 664px;
+    min-width: 0;
+
+    @include xxl {
+        width: 100%;
+        min-width: unset;
+    }
+
+    @include sm {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 1px;
+    }
+}
+
+.branchBox2 {
+    display: flex;
+    flex-direction: column;
+    width: 318px;
+    min-width: 0;
+    background-color: rgb(255 255 255);
+    outline: 1px solid rgb(196 196 196);
+    outline-offset: -1px;
+
+    @include sm {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.branchInfoColumn2 {
+    display: flex;
+    flex-direction: column;
+    margin: 101px 37px 102px 30px;
+
+    @include md {
+        margin: 101px 32px 102px 30px;
+    }
+
+    @include xs {
+        margin: 80px 16px;
+    }
+
+    @include tn {
+        margin: 50px 8px;
+    }
+}
+
+.branchTitle2 {
+    font: 700 30px/1.2 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.branchAddress2 {
+    margin: 19px 0 0;
+    width: 151px;
+    max-width: 85%;
+    font: 400 18px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(74 74 74);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 16px;
+    }
+}
+
+.branchContactRow2 {
+    display: flex;
+    gap: 0 10px;
+    margin: 35px 0 0;
+
+    @include tn {
+        column-gap: 8px;
+    }
+}
+
+.branchContactIcon2 {
+    margin: 2px 0;
+    width: 25px;
+    height: 19px;
+    object-fit: cover;
+}
+
+.branchContactEmail2 {
+    font: 400 18px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(74 74 74);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 16px;
+    }
+}
+
+.branchPhoneRow2 {
+    display: flex;
+    gap: 0 10px;
+    margin: 35px 0 0;
+
+    @include tn {
+        column-gap: 8px;
+    }
+}
+
+.branchPhoneIcon2 {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.branchPhoneText2 {
+    margin: 1px 0;
+    font: 400 18px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(74 74 74);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 16px;
+    }
+}
+
+.branchImage2 {
+    width: 345px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include sm {
+        width: 100%;
+        min-width: unset;
+        max-width: 345px;
+    }
+}

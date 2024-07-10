@@ -1,0 +1,409 @@
+@use "../components/utils.scss" as *;
+
+.menuOverviewSection {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41 46 54);
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 3%;
+
+    @include xs {
+        margin: 65px auto 80px;
+    }
+
+    @include tn {
+        margin: 50px auto;
+    }
+}
+
+.menuSection {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    @include tn {
+        margin: 50px 0 0;
+    }
+}
+
+.horizontalLineBeforeTitle {
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    background-color: rgb(225 177 104);
+}
+
+.menuTitle {
+    display: flex;
+    justify-content: center;
+    margin: 11px 0 0 1px;
+    font: 700 60px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(255 255 255);
+    text-align: center;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 52px;
+    }
+
+    @include xxs {
+        font-size: 36px;
+    }
+}
+
+.horizontalLineAfterTitle {
+    margin: 9px 0 0;
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    background-color: rgb(225 177 104);
+}
+
+
+.pastaDishesSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.pastaDishesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px 0;
+    margin: 59px auto;
+    width: 1376.0625px;
+    max-width: 85%;
+
+    @include xs {
+        gap: 80px 0;
+    }
+
+    @include tn {
+        gap: 50px 0;
+        margin: 50px auto;
+    }
+}
+
+.pastaDishList {
+    display: flex;
+    flex-direction: column;
+    gap: 100px 0;
+    width: 100%;
+
+    @include xs {
+        gap: 80px 0;
+    }
+
+    @include tn {
+        gap: 50px 0;
+    }
+}
+
+.pastaDishItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10px;
+
+    @include lg {
+        flex-direction: column;
+        gap: 30px 10px;
+    }
+}
+
+.pastaImage1 {
+    width: 856px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include lg {
+        width: 100%;
+        min-width: unset;
+        max-width: 856px;
+    }
+}
+
+.pastaDescription1 {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    min-width: 0;
+
+    @include lg {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.pastaTitle1 {
+    font: 700 65px/1.08 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 52px;
+    }
+
+    @include xxs {
+        font-size: 36px;
+    }
+}
+
+.pastaSubtitle1 {
+    margin: 13px 0 0;
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.pastaCategoryBox1 {
+    font: 700 22px/2.14 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+        font-size: 20px;
+    }
+
+    @include xxs {
+        font-size: 18px;
+    }
+}
+
+.pastaCategoryBox1_box {
+    margin: 24px 0 0;
+
+    @include md {
+        align-items: flex-start;
+    }
+}
+
+.pastaCategoryBox1_span0 {
+    font: 700 1em/2.14 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+}
+
+.pastaCategoryBox1_span1 {
+    font: 700 1em/2.14 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+}
+
+.pastaDishItem2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10px;
+
+    @include lg {
+        flex-direction: column;
+        gap: 30px 10px;
+    }
+}
+
+.pastaImage2 {
+    width: 856px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include lg {
+        width: 100%;
+        min-width: unset;
+        max-width: 856px;
+    }
+}
+
+.pastaDescription2 {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    min-width: 0;
+
+    @include lg {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.pastaTitle2 {
+    font: 700 65px/1.08 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 52px;
+    }
+
+    @include xxs {
+        font-size: 36px;
+    }
+}
+
+.pastaSubtitle2 {
+    margin: 13px 0 0;
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.pastaCategoryBox2 {
+    font: 700 22px/2.14 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+        font-size: 20px;
+    }
+
+    @include xxs {
+        font-size: 18px;
+    }
+}
+
+.pastaCategoryBox2_box {
+    margin: 24px 0 0;
+
+    @include md {
+        align-items: flex-start;
+    }
+}
+
+.pastaCategoryBox2_span0 {
+    font: 700 1em/2.14 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+}
+
+.pastaCategoryBox2_span1 {
+    font: 700 1em/2.14 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+}
+
+.pastaDishItem3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10px;
+
+    @include xl {
+        flex-direction: column;
+        gap: 30px 10px;
+    }
+}
+
+.pastaImage3 {
+    width: 856px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include xl {
+        width: 100%;
+        min-width: unset;
+        max-width: 856px;
+    }
+}
+
+.pastaDescription3 {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    min-width: 0;
+
+    @include xl {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.pastaTitle3 {
+    font: 700 65px/1.08 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 52px;
+    }
+
+    @include xxs {
+        font-size: 36px;
+    }
+}
+
+.pastaSubtitle3 {
+    margin: 13px 0 0;
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.pastaCategoryBox3 {
+    font: 700 22px/2.14 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+        font-size: 20px;
+    }
+
+    @include xxs {
+        font-size: 18px;
+    }
+}
+
+.pastaCategoryBox3_box {
+    margin: 24px 0 0;
+
+    @include md {
+        align-items: flex-start;
+    }
+}
+
+.pastaCategoryBox3_span0 {
+    font: 700 1em/2.14 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+}
+
+.pastaCategoryBox3_span1 {
+    font: 700 1em/2.14 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+}
+
+.seeAllDishesButton {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 232px;
+    max-width: 100%;
+    font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(225 177 104);
+    text-align: center;
+    padding: 20px 8px;
+    outline: 2px solid rgb(225 177 104);
+    outline-offset: -2px;
+    background-color: transparent;
+}
