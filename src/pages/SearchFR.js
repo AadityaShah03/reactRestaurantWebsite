@@ -1,8 +1,6 @@
-
 import React, { useState } from "react";
 import ReserveFooter from '../components/ReserveFooter/index.js';
-
-import searchStyles from '../Styles/Search.module.scss'
+import searchStyles from '../Styles/Search.module.scss';
 
 const Search = () => {
 
@@ -19,114 +17,113 @@ const Search = () => {
     const dishes = [
         {
             id: 1,
-            title: "Raw Scallops from Erquy",
+            title: "Coquilles Saint-Jacques d'Erquy",
             image: "/assets/starter1.png",
-            ingredients: "Scallops, lemon, parsley, olive oil",
-            price: "$40",
-            tod: "Starter",
-            tom: "Meat",
+            ingredients: "Coquilles Saint-Jacques, citron, persil, huile d'olive",
+            price: "40$",
+            tod: "Entrée",
+            tom: "Viande",
         },
         {
             id: 2,
-            title: "Spring Roll",
+            title: "Rouleau de Printemps",
             image: "/assets/starter2.png",
-            ingredients: "Rice paper, shrimp, vermicelli, lettuce, mint",
-            price: "$20",
-            tod: "Starter",
-            tom: "Meat",
+            ingredients: "Papier de riz, crevettes, vermicelles, laitue, menthe",
+            price: "20$",
+            tod: "Entrée",
+            tom: "Viande",
         },
         {
             id: 3,
-            title: "French Onion Soup",
+            title: "Soupe à l'Oignon",
             image: "/assets/starter3.png",
-            ingredients: "Onions, beef broth, Gruyere cheese, croutons",
-            price: "$25",
-            tod: "Starter",
-            tom: "Veggie",
+            ingredients: "Oignons, bouillon de boeuf, fromage Gruyère, croûtons",
+            price: "25$",
+            tod: "Entrée",
+            tom: "Végétarien",
         },
         {
             id: 4,
-            title: "Tomato Bruschetta",
+            title: "Bruschetta à la Tomate",
             image: "/assets/starter4.png",
-            ingredients: "Tomatoes, basil, garlic, olive oil, baguette",
-            price: "$30",
-            tod: "Starter",
-            tom: "Veggie",
+            ingredients: "Tomates, basilic, ail, huile d'olive, baguette",
+            price: "30$",
+            tod: "Entrée",
+            tom: "Végétarien",
         },
         {
             id: 5,
-            title: "Grilled Salmon with Dill Sauce",
+            title: "Saumon Grillé à la Sauce Aneth",
             image: "/assets/main1.png",
-            ingredients: "Salmon, dill, lemon, garlic, olive oil",
-            price: "$40",
-            tod: "Main",
-            tom: "Meat",
+            ingredients: "Saumon, aneth, citron, ail, huile d'olive",
+            price: "40$",
+            tod: "Plat Principal",
+            tom: "Viande",
         },
         {
             id: 6,
-            title: "Roast Beef with Vegetable",
+            title: "Boeuf Rôti avec Légumes",
             image: "/assets/main2.png",
-            ingredients: "Beef, carrots, potatoes, rosemary",
-            price: "$20",
-            tod: "Main",
-            tom: "Meat",
+            ingredients: "Boeuf, carottes, pommes de terre, romarin",
+            price: "20$",
+            tod: "Plat Principal",
+            tom: "Viande",
         },
         {
             id: 7,
-            title: "Marrkesh Vegetarian Curry",
+            title: "Curry Végétarien de Marrkesh",
             image: "/assets/main3.png",
-            ingredients: "Chickpeas, tomatoes, carrots, spices",
-            price: "$25",
-            tod: "Main",
-            tom: "Veggie",
+            ingredients: "Pois chiches, tomates, carottes, épices",
+            price: "25$",
+            tod: "Plat Principal",
+            tom: "Végétarien",
         },
         {
             id: 8,
-            title: "Spicy Vegan Potato Curry",
+            title: "Curry Épicé de Pommes de Terre Vegan",
             image: "/assets/main4.png",
-            ingredients: "Potatoes, coconut milk, spices, chili",
-            price: "$30",
-            tod: "Main",
+            ingredients: "Pommes de terre, lait de coco, épices, piment",
+            price: "30$",
+            tod: "Plat Principal",
             tom: "Vegan",
         },
         {
             id: 9,
-            title: "Apple Pie with Cream",
+            title: "Tarte aux Pommes avec Crème",
             image: "/assets/des1.png",
-            ingredients: "Apples, cinnamon, sugar, cream",
-            price: "$40",
+            ingredients: "Pommes, cannelle, sucre, crème",
+            price: "40$",
             tod: "Dessert",
-            tom: "Veggie",
+            tom: "Végétarien",
         },
         {
             id: 10,
-            title: "Lemon Meringue Pie",
+            title: "Tarte au Citron Meringuée",
             image: "/assets/des2.png",
-            ingredients: "Lemon, eggs, sugar, pie crust",
-            price: "$20",
+            ingredients: "Citron, œufs, sucre, pâte à tarte",
+            price: "20$",
             tod: "Dessert",
-            tom: "Veggie",
+            tom: "Végétarien",
         },
         {
             id: 11,
-            title: "Tender Octopus and Fennel",
+            title: "Poulpe Tendre et Fenouil",
             image: "/assets/des3.png",
-            ingredients: "Octopus, fennel, olive oil, lemon",
-            price: "$50",
+            ingredients: "Poulpe, fenouil, huile d'olive, citron",
+            price: "50$",
             tod: "Dessert",
-            tom: "Meat",
+            tom: "Viande",
         },
         {
             id: 12,
-            title: "Sea Bass Ceviche",
+            title: "Ceviche de Bar",
             image: "/assets/des4.png",
-            ingredients: "Sea bass, lime, cilantro, onions",
-            price: "$35",
+            ingredients: "Bar, lime, coriandre, oignons",
+            price: "35$",
             tod: "Dessert",
-            tom: "Meat",
+            tom: "Viande",
         },
     ];
-
 
     const searchFilteredItems = dishes.filter((dish) =>
         dish.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -134,10 +131,10 @@ const Search = () => {
 
     const filteredItems = isAnyCategorySelected ? searchFilteredItems.filter((dish) =>
         (showVegan && dish.tom === "Vegan") ||
-        (showVeggie && dish.tom === "Veggie") ||
-        (showMeat && dish.tom === "Meat") ||
-        (showApp && dish.tod === "Starter") ||
-        (showMain && dish.tod === "Main") ||
+        (showVeggie && dish.tom === "Végétarien") ||
+        (showMeat && dish.tom === "Viande") ||
+        (showApp && dish.tod === "Entrée") ||
+        (showMain && dish.tod === "Plat Principal") ||
         (showDes && dish.tod === "Dessert")
     ) : [];
 
@@ -150,7 +147,7 @@ const Search = () => {
                         <div className={searchStyles.inputFlexRow}>
                             <input className={searchStyles.menuTitle}
                                 type="text"
-                                placeholder='Enter an Item'
+                                placeholder='Entrez un article'
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
                             />
@@ -165,8 +162,8 @@ const Search = () => {
                     <div className={searchStyles.filterContentBox}>
                         <div className={searchStyles.filterColumnContainer}>
                             <div className={searchStyles.filterHeadingContainer}>
-                                <h1 className={searchStyles.filterTitle}>Filter</h1>
-                                <h3 className={searchStyles.filterSubtitle}>select the options to filter dishes by type:</h3>
+                                <h1 className={searchStyles.filterTitle}>Filtrer</h1>
+                                <h3 className={searchStyles.filterSubtitle}>Sélectionnez les options pour filtrer les plats par type :</h3>
                             </div>
                             <div className={searchStyles.filterOptionsContainer}>
                                 <hr className={searchStyles.divider} size={1} />
@@ -183,14 +180,14 @@ const Search = () => {
                                             type="checkbox"
                                             checked={showVeggie}
                                             onChange={() => setShowVeggie(!showVeggie)} />
-                                        <h3 className={searchStyles.optionName}>Vegetarian</h3>
+                                        <h3 className={searchStyles.optionName}>Végétarien</h3>
                                     </div>
                                     <div className={searchStyles.filterOptionRow}>
                                         <input className={searchStyles.optionIconContainer}
                                             type="checkbox"
                                             checked={showMeat}
                                             onChange={() => setShowMeat(!showMeat)} />
-                                        <h3 className={searchStyles.optionName}>Meat</h3>
+                                        <h3 className={searchStyles.optionName}>Viande</h3>
                                     </div>
                                 </div>
                                 <hr className={searchStyles.divider} size={1} />
@@ -200,14 +197,14 @@ const Search = () => {
                                             type="checkbox"
                                             checked={showApp}
                                             onChange={() => setShowApp(!showApp)} />
-                                        <h3 className={searchStyles.optionName}>Appetizer</h3>
+                                        <h3 className={searchStyles.optionName}>Entrée</h3>
                                     </div>
                                     <div className={searchStyles.filterOptionRow}>
                                         <input className={searchStyles.optionIconContainer}
                                             type="checkbox"
                                             checked={showMain}
                                             onChange={() => setShowMain(!showMain)} />
-                                        <h3 className={searchStyles.optionName}>Main</h3>
+                                        <h3 className={searchStyles.optionName}>Plat Principal</h3>
                                     </div>
                                     <div className={searchStyles.filterOptionRow}>
                                         <input className={searchStyles.optionIconContainer}
@@ -222,7 +219,7 @@ const Search = () => {
                         </div>
                     </div>
                     <div className={searchStyles.resultsContainer}>
-                        <h1 className={searchStyles.resultsTitle}>Results</h1>
+                        <h1 className={searchStyles.resultsTitle}>Résultats</h1>
                         <div className={searchStyles.resultsList}>
 
                             {filteredItems.map((dish) => (

@@ -42,9 +42,10 @@
 .menuTitle {
     display: flex;
     justify-content: center;
-    margin: 11px 0 0 1px;
     font: 700 60px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
     color: rgb(255 255 255);
+    border: 2px solid rgb(225, 177, 104);
+    background-color: transparent;
     text-align: center;
 
     @include md {
@@ -63,4 +64,336 @@
     height: 1px;
     min-height: 1px;
     background-color: rgb(225 177 104);
+}
+
+.inputFlexRow {
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+}
+
+.inputEnterButton {
+    font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+    background-color: rgb(225 177 104);
+    outline: none;
+    border: none;
+}
+
+.filterSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.filterContainer {
+    display: flex;
+    justify-content: center ;
+    align-items: start;
+    gap: 0 50px;
+    max-width: 100%;
+    padding: 50px 50px 50px 50px;
+
+    @include xl {
+        flex-direction: column;
+        gap: 30px 10px;
+    }
+
+    @include md {
+        padding: 0 32px 0 0;
+    }
+
+    @include xs {
+        margin: 80px auto;
+        padding: 0 16px 0 0;
+    }
+
+    @include tn {
+        margin: 50px auto;
+        padding: 0 8px 0 0;
+    }
+}
+
+.filterContentBox {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-width: 0;
+    background-color: rgb(255 248 245);
+
+    @include xl {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.filterColumnContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 500px;
+
+    @include xl {
+        width: 85%;
+    }
+
+    @include tn {
+        margin: 50px auto;
+    }
+}
+
+.filterHeadingContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 22px 0;
+    width: 89.1%;
+}
+
+.filterTitle {
+    font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 36px;
+    }
+
+    @include xxs {
+        font-size: 32px;
+    }
+}
+
+.filterSubtitle {
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.filterOptionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+}
+
+.divider {
+    width: 100.01%;
+    height: 1px;
+    min-height: 1px;
+    background-color: rgb(0 0 0);
+}
+
+.filterOptionsList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+    width: 150px;
+    max-width: fit-content;
+}
+
+.filterOptionRow {
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+
+    @include tn {
+        column-gap: 8px;
+    }
+}
+
+.optionIconContainer {
+    display: flex;
+    flex-direction: column;
+    width: 52px;
+    min-width: 0;
+    background: var(--src) center center / cover no-repeat;
+    padding: 10px;
+}
+
+.optionIconImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.optionName {
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(74 74 74);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+
+.resultsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 44px 0;
+    width: 774px;
+    min-width: 0;
+
+    @include xl {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.resultsTitle {
+    display: flex;
+    justify-content: center;
+    width: 116px;
+    max-width: 85%;
+    font: 700 40px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+
+    @include md {
+        align-items: flex-start;
+        font-size: 36px;
+    }
+
+    @include xxs {
+        font-size: 32px;
+    }
+}
+
+.resultsList {
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0;
+}
+
+.resultCard {
+    display: flex;
+    gap: 0 21px;
+
+    @include xxl {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 21px;
+    }
+}
+
+.resultImage {
+    width: 84px;
+    min-width: 0;
+    height: 84px;
+    object-fit: cover;
+
+    @include xxl {
+        width: 100%;
+        min-width: unset;
+        max-width: 84px;
+    }
+}
+
+.resultDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 2px 0;
+    margin: 16px 0 7px;
+    width: 669px;
+    min-width: 0;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+.resultTitle {
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
+}
+
+.resultInfoRow {
+    display: flex;
+    gap: 0 9px;
+
+    @include xxl {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px 9px;
+    }
+}
+
+.resultDescription {
+    margin: 9px 0 0;
+    font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
+    color: rgb(85 85 85);
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.resultAdditionalImage {
+    margin: 20px 0 8px;
+    width: 272px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+        min-width: unset;
+        max-width: 272px;
+    }
+}
+
+.resultPrice {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 11px;
+    font: 700 30px/0.77 "Cormorant Infant", Helvetica, Arial, serif;
+    color: rgb(41 46 54);
+    text-align: center;
+
+    @include xxl {
+        margin: 0;
+        width: 100%;
+    }
+
+    @include md {
+        align-items: flex-start;
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 24px;
+    }
 }

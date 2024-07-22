@@ -5,7 +5,7 @@ import ReserveFooter from '../components/ReserveFooter/index.js';
 
 import homepageStyles from '../Styles/Homepage.module.scss';
 
-const Homepage = () => {
+const HomepageFr = () => {
     return (
         <div>
             <section className={homepageStyles.heroSection}>
@@ -13,23 +13,22 @@ const Homepage = () => {
                     <div className={homepageStyles.mainContentWrapper}>
                         <div className={homepageStyles.heroTextWrapper}>
                             <h1 className={homepageStyles.heroTitle}>
-                                Welcome to Restaurant A
+                                Bienvenue au Restaurant A
                             </h1>
                             <h3 className={homepageStyles.heroSubtitle}>
-                                Immerse yourself in a luxurious ambience and savour the exquisite flavours crafted from the freshest
-                                ingredients.
+                                Imprégnez-vous d'une ambiance luxueuse et savourez les saveurs exquises élaborées à partir des ingrédients les plus frais.
                             </h3>
                         </div>
-                        <Link to= "/menu" className={homepageStyles.linkButton}>
+                        <Link to="/menu/fr" className={homepageStyles.linkButton}>
                             <button className={homepageStyles.viewMenuButton}>
-                                View Menu
+                                Voir le Menu
                             </button>
                         </Link>
                     </div>
                     <img
                         className={homepageStyles.heroImage}
                         src={'/assets/homepageHook.png'}
-                        alt="alt text"
+                        alt="accueil"
                     />
                 </div>
             </section>
@@ -44,11 +43,11 @@ const Homepage = () => {
                                 <img
                                     className={homepageStyles.locationIcon}
                                     src={'/assets/location_white.svg'}
-                                    alt="location"
+                                    alt="emplacement"
                                 />
                             </figure>
                             <div className={homepageStyles.locationTextContainer}>
-                                <h1 className={homepageStyles.locationTitle}>Locate Us</h1>
+                                <h1 className={homepageStyles.locationTitle}>Nous Trouver</h1>
                                 <h3 className={homepageStyles.locationAddress}>221B Baker Street</h3>
                             </div>
                         </div>
@@ -59,12 +58,12 @@ const Homepage = () => {
                                 <img
                                     className={homepageStyles.hoursIcon}
                                     src={'/assets/clock.svg'}
-                                    alt="alt text"
+                                    alt="horaires"
                                 />
                             </figure>
                             <div className={homepageStyles.hoursTextContainer}>
-                                <h1 className={homepageStyles.hoursTitle}>Open Hours</h1>
-                                <h3 className={homepageStyles.hoursDetails}>Mon To Fri 9:00 AM - 9:00 AM</h3>
+                                <h1 className={homepageStyles.hoursTitle}>Horaires d'Ouverture</h1>
+                                <h3 className={homepageStyles.hoursDetails}>Lun au Ven 9:00 AM - 9:00 PM</h3>
                             </div>
                         </div>
                         <div className={homepageStyles.reservationInfoColumn}>
@@ -74,11 +73,11 @@ const Homepage = () => {
                                 <img
                                     className={homepageStyles.reservationIcon}
                                     src={'/assets/reservation_list.svg'}
-                                    alt="alt text"
+                                    alt="réservation"
                                 />
                             </figure>
                             <div className={homepageStyles.reservationTextContainer}>
-                                <h1 className={homepageStyles.reservationTitle}>Reservation</h1>
+                                <h1 className={homepageStyles.reservationTitle}>Réservation</h1>
                                 <h3 className={homepageStyles.reservationEmail}>RestaurantA@RestaurantA.com</h3>
                             </div>
                         </div>
@@ -87,31 +86,31 @@ const Homepage = () => {
                         <img
                             className={homepageStyles.storyImage1}
                             src={'/assets/story_image.png'}
-                            alt="alt text"
+                            alt="l'histoire"
                         />
                         <img
                             className={homepageStyles.storyImage2}
                             src={'/assets/vertical_line.svg'}
-                            alt="alt text"
+                            alt="ligne verticale"
                         />
                         <div className={homepageStyles.storyTextContainer}>
-                            <h1 className={homepageStyles.storyTitle}>The Story</h1>
+                            <h1 className={homepageStyles.storyTitle}>L'Histoire</h1>
                             <h3 className={homepageStyles.storyDescription}>
-                                Welcome to Restaurant A, where modern Mediterranean fine dining meets exceptional culinary artistry.
-                                Restaurant A is a family run restaurant that is known for it’s modern menu and dining experience
+                                Bienvenue au Restaurant A, où la haute cuisine méditerranéenne moderne rencontre un art culinaire exceptionnel.
+                                Le Restaurant A est un restaurant familial connu pour son menu moderne et son expérience gastronomique.
                             </h3>
                             <div className={homepageStyles.storyHighlightsRow}>
                                 <div className={homepageStyles.establishmentHighlight}>
                                     <h1 className={homepageStyles.establishmentYear}>1996</h1>
-                                    <h3 className={homepageStyles.establishmentHighlightText}>was the year we were established</h3>
+                                    <h3 className={homepageStyles.establishmentHighlightText}>année de notre création</h3>
                                 </div>
                                 <div className={homepageStyles.establishmentHighlight}>
                                     <h1 className={homepageStyles.establishmentYear}>2024</h1>
-                                    <h3 className={homepageStyles.establishmentHighlightText}>Best restaurant of the year</h3>
+                                    <h3 className={homepageStyles.establishmentHighlightText}>Meilleur restaurant de l'année</h3>
                                 </div>
                             </div>
                             <div className={homepageStyles.ownerSignatureSection}>
-                                <h3 className={homepageStyles.ownerSignatureText}>OWNER SIGNUTURE</h3>
+                                <h3 className={homepageStyles.ownerSignatureText}>SIGNATURE DU PROPRIÉTAIRE</h3>
                                 <h1 className={homepageStyles.ownerName}>Josefine</h1>
                             </div>
                         </div>
@@ -125,12 +124,12 @@ const Homepage = () => {
                         <div className={homepageStyles.flexColContainer1}>
                             <div className={homepageStyles.flexColTopContent}>
                                 <hr className={homepageStyles.horizontalLine1} size={1} />
-                                <h5 className={homepageStyles.offerHighlight}>Offer</h5>
+                                <h5 className={homepageStyles.offerHighlight}>Offre</h5>
                                 <hr className={homepageStyles.horizontalLine2} size={1} />
                             </div>
-                            <h1 className={homepageStyles.offerTitle}>Our special offer dishes</h1>
+                            <h1 className={homepageStyles.offerTitle}>Nos plats en offre spéciale</h1>
                             <h3 className={homepageStyles.offerSubtitle}>
-                                Don't miss our special offers, featuring exclusive dishes and seasonal delights at unbeatable prices!
+                                Ne manquez pas nos offres spéciales, avec des plats exclusifs et des délices de saison à des prix imbattables !
                             </h3>
                         </div>
                         <div className={homepageStyles.flexRowWrapper}>
@@ -141,7 +140,7 @@ const Homepage = () => {
                                     <div
                                         className={homepageStyles.contentBoxHeader1}
                                         style={{ '--src': `url(${'/assets/background_circle_white.svg'})` }}>
-                                        <h5 className={homepageStyles.offerHighlightSmall}>Only</h5>
+                                        <h5 className={homepageStyles.offerHighlightSmall}>Seulement</h5>
                                         <h1 className={homepageStyles.offerPriceWrapper1_box}>
                                             <span className={homepageStyles.offerPriceWrapper1}>
                                                 <span className={homepageStyles.offerPriceWrapper1_span0}>$</span>
@@ -151,13 +150,12 @@ const Homepage = () => {
                                     </div>
                                     <div className={homepageStyles.flex_col}>
                                         <hr className={homepageStyles.horizontalLine3} size={1} />
-                                        <h5 className={homepageStyles.offerDiscountHighlight1}>50% Offer Going</h5>
+                                        <h5 className={homepageStyles.offerDiscountHighlight1}>Offre de 50%</h5>
                                         <hr className={homepageStyles.horizontalLine4} size={1} />
                                     </div>
-                                    <h1 className={homepageStyles.offerItemTitle1}>Chicken Burger</h1>
+                                    <h1 className={homepageStyles.offerItemTitle1}>Burger au Poulet</h1>
                                     <h3 className={homepageStyles.offerItemDescription1}>
-                                        Our succulent chicken burger is a delightful fusion of Mediterranean spices and premium, juicy
-                                        chicken.
+                                        Notre burger au poulet succulent est une fusion délicieuse d'épices méditerranéennes et de poulet juteux de premier choix.
                                     </h3>
                                 </div>
                             </figure>
@@ -169,18 +167,18 @@ const Homepage = () => {
                                         className={homepageStyles.contentBoxHeader2}
                                         style={{ '--src': `url(${'/assets/background_circle_blue.svg'})` }}>
                                         <div className={homepageStyles.flex_col1}>
-                                            <h5 className={homepageStyles.offerHighlightSmall2}>Only</h5>
+                                            <h5 className={homepageStyles.offerHighlightSmall2}>Seulement</h5>
                                             <h1 className={homepageStyles.offerPriceWrapper2}>$9</h1>
                                         </div>
                                     </div>
                                     <div className={homepageStyles.flex_col}>
                                         <hr className={homepageStyles.horizontalLine5} size={1} />
-                                        <h5 className={homepageStyles.offerDiscountHighlight2}>50% Offer Going</h5>
+                                        <h5 className={homepageStyles.offerDiscountHighlight2}>Offre de 50%</h5>
                                         <hr className={homepageStyles.horizontalLine6} size={1} />
                                     </div>
-                                    <h1 className={homepageStyles.offerItemTitle2}>Exotic Pizza</h1>
+                                    <h1 className={homepageStyles.offerItemTitle2}>Pizza Exotique</h1>
                                     <h3 className={homepageStyles.offerItemDescription2}>
-                                        Try our exotic pizza, bursting with bold, unique flavors
+                                        Essayez notre pizza exotique, débordante de saveurs audacieuses et uniques.
                                     </h3>
                                 </div>
                             </figure>
@@ -194,10 +192,9 @@ const Homepage = () => {
                                 <hr className={homepageStyles.horizontalLine8} size={1} />
                             </div>
                             <div className={homepageStyles.flexColContainer3}>
-                                <h1 className={homepageStyles.popularDishesTitle}>Popular Dishes</h1>
+                                <h1 className={homepageStyles.popularDishesTitle}>Plats Populaires</h1>
                                 <h3 className={homepageStyles.popularDishesSubtitle}>
-                                    Discover our popular dishes, each thoughtfully crafted to highlight the vibrant and diverse flavours of
-                                    Mediterranean cuisine.
+                                    Découvrez nos plats populaires, chacun soigneusement élaboré pour mettre en valeur les saveurs vibrantes et diversifiées de la cuisine méditerranéenne.
                                 </h3>
                             </div>
                         </div>
@@ -206,15 +203,15 @@ const Homepage = () => {
                                 <img
                                     className={homepageStyles.imageSpaghetti}
                                     src={'/assets/Classic_Spaghetti.png'}
-                                    alt="Classic Spaghetti"
+                                    alt="Spaghetti Classique"
                                 />
                                 <div className={homepageStyles.flexRowSpaghetti}>
-                                    <h1 className={homepageStyles.dishNameSpaghetti}>Classic Spaghetti</h1>
+                                    <h1 className={homepageStyles.dishNameSpaghetti}>Spaghetti Classique</h1>
                                     <h1 className={homepageStyles.dishPrice}>$15</h1>
                                 </div>
                                 <hr className={homepageStyles.horizontalLine7} size={1} />
                                 <h3 className={homepageStyles.dishDescriptionSpaghetti}>
-                                    Enjoy our spaghetti and meatballs with rich, aromatic sauce
+                                    Savourez nos spaghetti et boulettes de viande avec une sauce riche et aromatique.
                                 </h3>
                             </div>
                             <div className={homepageStyles.popularDishCol2}>
@@ -229,45 +226,45 @@ const Homepage = () => {
                                 </div>
                                 <hr className={homepageStyles.horizontalLine7} size={1} />
                                 <h3 className={homepageStyles.dishDescriptionHotDogs}>
-                                    Indulge in our gourmet hot dogs, infused with Mediterranean herbs
+                                    Régalez-vous avec nos hot dogs gastronomiques, infusés d'herbes méditerranéennes.
                                 </h3>
                             </div>
                             <div className={homepageStyles.popularDishCol3}>
                                 <img
                                     className={homepageStyles.imageCitrusTea}
                                     src={'/assets/citrus_tea.png'}
-                                    alt="Citrus Tea"
+                                    alt="Thé aux Agrumes"
                                 />
                                 <div className={homepageStyles.flexRowCitrusTea}>
-                                    <h1 className={homepageStyles.dishNameCitrusTea}>Citrus Tea</h1>
+                                    <h1 className={homepageStyles.dishNameCitrusTea}>Thé aux Agrumes</h1>
                                     <h1 className={homepageStyles.dishPrice3}>$15</h1>
                                 </div>
                                 <hr className={homepageStyles.horizontalLine7} size={1} />
                                 <h3 className={homepageStyles.dishDescriptionCitrusTea}>
-                                    Savor our citrus tea, a refreshing blend of citrus & aromatics.
+                                    Savourez notre thé aux agrumes, un mélange rafraîchissant d'agrumes et d'aromatiques.
                                 </h3>
                             </div>
                             <div className={homepageStyles.popularDishCol4}>
                                 <img
                                     className={homepageStyles.imageSandwich}
                                     src={'/assets/Artisan_sandwich.png'}
-                                    alt="Artisan Sandwich"
+                                    alt="Sandwich Artisan"
                                 />
                                 <div className={homepageStyles.flexRowSandwich}>
-                                    <h1 className={homepageStyles.dishNameSandwich}>Artisan Sandwich</h1>
+                                    <h1 className={homepageStyles.dishNameSandwich}>Sandwich Artisan</h1>
                                     <h1 className={homepageStyles.dishPrice4}>$15</h1>
                                 </div>
                                 <hr className={homepageStyles.horizontalLine7} size={1} />
                                 <h3 className={homepageStyles.dishDescriptionSandwich}>
-                                    Hand-selected ingredients layered on freshly baked bread
+                                    Ingrédients sélectionnés à la main, superposés sur du pain fraîchement cuit.
                                 </h3>
                             </div>
                         </div>
                     </div>
 
-                    <Link to="/menu" className={homepageStyles.linkButton}>
+                    <Link to="/menu/fr" className={homepageStyles.linkButton}>
                         <button className={homepageStyles.seeAllDishesBtn}>
-                            See all dishes
+                            Voir tous les plats
                         </button>
                     </Link>
                 </div>
@@ -277,7 +274,7 @@ const Homepage = () => {
                 <img
                     className={homepageStyles.heroImageSplash}
                     src={'/assets/background_splash.png'}
-                    alt="restaurant lights"
+                    alt="lumières du restaurant"
                 />
 
                 <div className={homepageStyles.contentBox}>
@@ -285,13 +282,13 @@ const Homepage = () => {
                         <div className={homepageStyles.headerColumn}>
                             <div className={homepageStyles.highlightColumn}>
                                 <hr className={homepageStyles.horizontalLineTop} size={1} />
-                                <h5 className={homepageStyles.testimonialHighlight}>Testimonial</h5>
+                                <h5 className={homepageStyles.testimonialHighlight}>Témoignage</h5>
                                 <hr className={homepageStyles.horizontalLineBottom} size={1} />
                             </div>
 
-                            <h1 className={homepageStyles.testimonialTitle}>What our Critics say</h1>
+                            <h1 className={homepageStyles.testimonialTitle}>Ce que disent nos critiques</h1>
                             <h3 className={homepageStyles.testimonialSubtitle}>
-                                We love to hear from you, so please leave a comment or say hello in an email!
+                                Nous adorons avoir de vos nouvelles, alors laissez un commentaire ou envoyez-nous un e-mail pour dire bonjour !
                             </h3>
                         </div>
                         <div className={homepageStyles.testimonialRow}>
@@ -301,7 +298,7 @@ const Homepage = () => {
                                         <img
                                             className={homepageStyles.testimonialImage1}
                                             src={'/assets/person_1.png'}
-                                            alt="alt text"
+                                            alt="Sarah Mitchell"
                                         />
                                         <div className={homepageStyles.testimonialTextColumn1}>
                                             <h1 className={homepageStyles.testimonialName1}>Sarah Mitchell</h1>
@@ -310,7 +307,7 @@ const Homepage = () => {
                                     </div>
                                     <hr className={homepageStyles.testimonialLine1} size={1} />
                                     <h2 className={homepageStyles.testimonialContent1}>
-                                        "The Mediterranean flavors at this restaurant are exquisite! Fresh ingredients, generous portions, and friendly staff. Highly recommend the lamb kebabs and baklava!"
+                                        "Les saveurs méditerranéennes de ce restaurant sont exquises ! Ingrédients frais, portions généreuses et personnel amical. Je recommande vivement les kebabs d'agneau et le baklava !"
                                     </h2>
                                 </div>
                             </div>
@@ -320,7 +317,7 @@ const Homepage = () => {
                                         <img
                                             className={homepageStyles.testimonialImage2}
                                             src={'/assets/person_2.png'}
-                                            alt="alt text"
+                                            alt="David Kim"
                                         />
                                         <div className={homepageStyles.testimonialTextColumn2}>
                                             <h1 className={homepageStyles.testimonialName2}>David Kim</h1>
@@ -329,7 +326,7 @@ const Homepage = () => {
                                     </div>
                                     <hr className={homepageStyles.testimonialLine2} size={1} />
                                     <h2 className={homepageStyles.testimonialContent2}>
-                                        "Amazing Mediterranean cuisine! The hummus is creamy, and the falafel is perfectly crispy. Excellent service and a cozy atmosphere. Will be back for sure!"
+                                        "Cuisine méditerranéenne incroyable ! Le houmous est crémeux et le falafel parfaitement croustillant. Excellent service et atmosphère cosy. Je reviendrai certainement !"
                                     </h2>
                                 </div>
                             </div>
@@ -339,7 +336,7 @@ const Homepage = () => {
                                         <img
                                             className={homepageStyles.testimonialImage3}
                                             src={'/assets/person_3.png'}
-                                            alt="alt text"
+                                            alt="Emily Jones"
                                         />
                                         <div className={homepageStyles.testimonialTextColumn3}>
                                             <h1 className={homepageStyles.testimonialName3}>Emily Jones</h1>
@@ -348,7 +345,7 @@ const Homepage = () => {
                                     </div>
                                     <hr className={homepageStyles.testimonialLine3} size={1} />
                                     <h2 className={homepageStyles.testimonialContent3}>
-                                        "Delicious Mediterranean dishes! The gyro platter was flavorful and filling. Attentive service and great ambiance. Perfect spot for a casual yet delightful meal."
+                                        "Plats méditerranéens délicieux ! Le plateau de gyros était savoureux et copieux. Service attentif et excellente ambiance. L'endroit parfait pour un repas décontracté mais agréable."
                                     </h2>
                                 </div>
                             </div>
@@ -356,9 +353,11 @@ const Homepage = () => {
                     </div>
                 </div>
             </section>
+
+
             <ReserveFooter />
         </div>
     );
-}
+};
 
-export default Homepage;
+export default HomepageFr;

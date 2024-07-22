@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import reserveStyles from '../Styles/Reserve.module.scss'
+import reserveStyles from '../Styles/Reserve.module.scss';
 
 const Reserve = () => {
 
@@ -13,9 +13,9 @@ const Reserve = () => {
 
     const handleBookTableClick = () => {
         if (name && email && phone && date && time && person) {
-            alert('Reservation confirmed! Thank you for booking.');
+            alert('Réservation confirmée ! Merci pour votre réservation.');
         } else {
-            alert('Please fill all the fields before booking.');
+            alert('Veuillez remplir tous les champs avant de réserver.');
         }
     };
 
@@ -25,7 +25,7 @@ const Reserve = () => {
                 <div className={reserveStyles.contentContainer}>
                     <div className={reserveStyles.menuSection}>
                         <hr className={reserveStyles.horizontalLineBeforeTitle} size={1} />
-                        <h1 className={reserveStyles.menuTitle}>Reserve A Table</h1>
+                        <h1 className={reserveStyles.menuTitle}>Réserver une Table</h1>
                         <hr className={reserveStyles.horizontalLineAfterTitle} size={1} />
                     </div>
                 </div>
@@ -36,21 +36,20 @@ const Reserve = () => {
                     <div className={reserveStyles.reservationContent}>
                         <div className={reserveStyles.headerLayout}>
                             <hr className={reserveStyles.topLine} size={1} />
-                            <h5 className={reserveStyles.reservationHighlight}>Reservation</h5>
+                            <h5 className={reserveStyles.reservationHighlight}>Réservation</h5>
                             <hr className={reserveStyles.bottomLine} size={1} />
                         </div>
 
-                        <h1 className={reserveStyles.heroTitle}>Book your table now</h1>
+                        <h1 className={reserveStyles.heroTitle}>Réservez votre table maintenant</h1>
                         <h3 className={reserveStyles.subtitle}>
-                            Visit us for an unforgettable dining experience that caters to all tastes, making it the perfect restaurant
-                            for everyone!
+                            Visitez-nous pour une expérience culinaire inoubliable qui satisfait tous les goûts, faisant de nous le restaurant idéal pour tout le monde !
                         </h3>
 
                         <div className={reserveStyles.reservationGrid}>
                             <input
                                 className={reserveStyles.nameItem}
                                 type="text"
-                                placeholder="Name"
+                                placeholder="Nom"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                             />
@@ -64,7 +63,7 @@ const Reserve = () => {
                             <input
                                 className={reserveStyles.phoneItem}
                                 type="tel"
-                                placeholder="Phone"
+                                placeholder="Téléphone"
                                 value={phone}
                                 onChange={(e) => setPhone(e.target.value)}
                             />
@@ -78,19 +77,19 @@ const Reserve = () => {
                             <input
                                 className={reserveStyles.timeItem}
                                 type="time"
-                                placeholder="Time"
+                                placeholder="Heure"
                                 value={time}
                                 onChange={(e) => setTime(e.target.value)}
                             />
                             <input
                                 className={reserveStyles.personItem}
                                 type="number"
-                                placeholder="Number of Persons"
+                                placeholder="Nombre de Personnes"
                                 value={person}
                                 onChange={(e) => setPerson(e.target.value)}
                             />
                             <button className={reserveStyles.bookTableBtn} onClick={handleBookTableClick}>
-                                Book a Table
+                                Réserver une Table
                             </button>
                         </div>
                     </div>

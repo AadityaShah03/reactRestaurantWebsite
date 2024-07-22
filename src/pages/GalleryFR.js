@@ -12,7 +12,7 @@ const Gallery = () => {
                 <div className={galleryStyles.contentContainer}>
                     <div className={galleryStyles.menuSection}>
                         <hr className={galleryStyles.horizontalLineBeforeTitle} size={1} />
-                        <h1 className={galleryStyles.menuTitle}>Gallery</h1>
+                        <h1 className={galleryStyles.menuTitle}>Galerie</h1>
                         <hr className={galleryStyles.horizontalLineAfterTitle} size={1} />
                     </div>
                 </div>
@@ -25,21 +25,20 @@ const Gallery = () => {
                             <img
                                 className={galleryStyles.pastaImage1}
                                 src={'/assets/gallery_splash.png'}
-                                alt="gallery splash"
+                                alt="splash de la galerie"
                             />
                             <div className={galleryStyles.pastaDescription1}>
-                                <h1 className={galleryStyles.pastaTitle1}>Italian Pasta</h1>
+                                <h1 className={galleryStyles.pastaTitle1}>Pâtes Italiennes</h1>
                                 <h3 className={galleryStyles.pastaSubtitle1}>
-                                    Typical spaghetti is made from water, milled wheat, and flour, but authentic spaghetti is made with
-                                    durum wheat semolina.
+                                    Les spaghetti typiques sont faits d'eau, de blé moulu et de farine, mais les véritables spaghetti sont fabriqués à partir de semoule de blé dur.
                                     <br />
                                     <br />
-                                    {`Spaghetti is Italy's classic pasta that is known for its long, thin, cylindrical shape.`}
+                                    {`Les spaghetti sont les pâtes classiques de l'Italie, connues pour leur forme longue, fine et cylindrique.`}
                                 </h3>
                                 <h3 className={galleryStyles.pastaCategoryBox1_box}>
                                     <span className={galleryStyles.pastaCategoryBox1}>
-                                        <span className={galleryStyles.pastaCategoryBox1_span0}>CATEGORY: </span>
-                                        <span className={galleryStyles.pastaCategoryBox1_span1}>Main Courses</span>
+                                        <span className={galleryStyles.pastaCategoryBox1_span0}>CATÉGORIE : </span>
+                                        <span className={galleryStyles.pastaCategoryBox1_span1}>Plats Principaux</span>
                                     </span>
                                 </h3>
                             </div>
@@ -48,21 +47,20 @@ const Gallery = () => {
                             <img
                                 className={galleryStyles.pastaImage2}
                                 src={'/assets/gallery2_splash.png'}
-                                alt="gallery 2 splash"
+                                alt="splash galerie 2"
                             />
                             <div className={galleryStyles.pastaDescription2}>
-                                <h1 className={galleryStyles.pastaTitle2}>Stuffed Pasta</h1>
+                                <h1 className={galleryStyles.pastaTitle2}>Pâtes Farcies</h1>
                                 <h3 className={galleryStyles.pastaSubtitle2}>
-                                    Typical spaghetti is made from water, milled wheat, and flour, but authentic spaghetti is made with
-                                    durum wheat semolina.
+                                    Les spaghetti typiques sont faits d'eau, de blé moulu et de farine, mais les véritables spaghetti sont fabriqués à partir de semoule de blé dur.
                                     <br />
                                     <br />
-                                    {`Spaghetti is Italy's classic pasta that is known for its long, thin, cylindrical shape.`}
+                                    {`Les spaghetti sont les pâtes classiques de l'Italie, connues pour leur forme longue, fine et cylindrique.`}
                                 </h3>
                                 <h3 className={galleryStyles.pastaCategoryBox2_box}>
                                     <span className={galleryStyles.pastaCategoryBox2}>
-                                        <span className={galleryStyles.pastaCategoryBox2_span0}>CATEGORY: </span>
-                                        <span className={galleryStyles.pastaCategoryBox2_span1}>Main Courses</span>
+                                        <span className={galleryStyles.pastaCategoryBox2_span0}>CATÉGORIE : </span>
+                                        <span className={galleryStyles.pastaCategoryBox2_span1}>Plats Principaux</span>
                                     </span>
                                 </h3>
                             </div>
@@ -71,30 +69,29 @@ const Gallery = () => {
                             <img
                                 className={galleryStyles.pastaImage3}
                                 src={'/assets/gallery3_splash.png'}
-                                alt="gallery 3 splash"
+                                alt="splash galerie 3"
                             />
                             <div className={galleryStyles.pastaDescription3}>
-                                <h1 className={galleryStyles.pastaTitle3}>Tubular Pasta</h1>
+                                <h1 className={galleryStyles.pastaTitle3}>Pâtes Tubulaires</h1>
                                 <h3 className={galleryStyles.pastaSubtitle3}>
-                                    Typical spaghetti is made from water, milled wheat, and flour, but authentic spaghetti is made with
-                                    durum wheat semolina.
+                                    Les spaghetti typiques sont faits d'eau, de blé moulu et de farine, mais les véritables spaghetti sont fabriqués à partir de semoule de blé dur.
                                     <br />
                                     <br />
-                                    {`Spaghetti is Italy's classic pasta that is known for its long, thin, cylindrical shape.`}
+                                    {`Les spaghetti sont les pâtes classiques de l'Italie, connues pour leur forme longue, fine et cylindrique.`}
                                 </h3>
                                 <h3 className={galleryStyles.pastaCategoryBox3_box}>
                                     <span className={galleryStyles.pastaCategoryBox3}>
-                                        <span className={galleryStyles.pastaCategoryBox3_span0}>CATEGORY: </span>
-                                        <span className={galleryStyles.pastaCategoryBox3_span1}>Main Courses</span>
+                                        <span className={galleryStyles.pastaCategoryBox3_span0}>CATÉGORIE : </span>
+                                        <span className={galleryStyles.pastaCategoryBox3_span1}>Plats Principaux</span>
                                     </span>
                                 </h3>
                             </div>
                         </article>
                     </div>
-                    <Link to="/menu" className={galleryStyles.linkButton}>
-                    <button className={galleryStyles.seeAllDishesButton}>
-                        See all dishes
-                    </button>
+                    <Link to="/menu/fr" className={galleryStyles.linkButton}>
+                        <button className={galleryStyles.seeAllDishesButton}>
+                            Voir tous les plats
+                        </button>
                     </Link>
                 </div>
             </section>

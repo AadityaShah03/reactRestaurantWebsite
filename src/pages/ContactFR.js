@@ -12,9 +12,9 @@ const Contact = () => {
 
     const handleSendClick = () => {
         if (name && email && subject && phone && message) {
-            alert('All fields are filled. Your message has been sent!');
+            alert('Tous les champs sont remplis. Votre message a été envoyé !');
         } else {
-            alert('Please fill all the fields before sending.');
+            alert('Veuillez remplir tous les champs avant d’envoyer.');
         }
     };
 
@@ -24,7 +24,7 @@ const Contact = () => {
                 <div className={contactStyles.contentContainer}>
                     <div className={contactStyles.menuSection}>
                         <hr className={contactStyles.horizontalLineBeforeTitle} size={1} />
-                        <h1 className={contactStyles.menuTitle}>Contact Us</h1>
+                        <h1 className={contactStyles.menuTitle}>Contactez-nous</h1>
                         <hr className={contactStyles.horizontalLineAfterTitle} size={1} />
                     </div>
                 </div>
@@ -35,10 +35,9 @@ const Contact = () => {
                     <div className={contactStyles.contentRow}>
                         <div className={contactStyles.contactInfoBox}>
                             <div className={contactStyles.contactInfoColumn}>
-                                <h1 className={contactStyles.contactTitle}>Contact Information</h1>
+                                <h1 className={contactStyles.contactTitle}>Informations de Contact</h1>
                                 <h3 className={contactStyles.contactSubtitle}>
-                                    We would love to hear from you! Feel free to reach out with any questions, feedback, or special
-                                    requests!
+                                    Nous serions ravis d'avoir de vos nouvelles ! N'hésitez pas à nous contacter pour toute question, retour ou demande spéciale !
                                 </h3>
                                 <div className={contactStyles.addressRow}>
                                     <div
@@ -47,7 +46,7 @@ const Contact = () => {
                                         <img
                                             className={contactStyles.addressIconImage}
                                             src={'/assets/location_white.svg'}
-                                            alt="location"
+                                            alt="localisation"
                                         />
                                     </div>
                                     <h3 className={contactStyles.subtitle1}>221 Baker Street</h3>
@@ -71,7 +70,7 @@ const Contact = () => {
                                         <img
                                             className={contactStyles.phoneIconImage}
                                             src={'/assets/Phone_white.svg'}
-                                            alt="Phone"
+                                            alt="Téléphone"
                                         />
                                     </div>
                                     <h3 className={contactStyles.phoneText}>123 456 7890</h3>
@@ -90,12 +89,12 @@ const Contact = () => {
                                     <img
                                         className={contactStyles.socialMediaIcon3}
                                         src={'/assets/clear_grey_twitter.svg'}
-                                        alt="alt text"
+                                        alt="twitter"
                                     />
                                     <img
                                         className={contactStyles.socialMediaIcon4}
                                         src={'/assets/clear_grey_pintrest.svg'}
-                                        alt="alt text"
+                                        alt="pinterest"
                                     />
                                 </div>
                             </div>
@@ -103,16 +102,16 @@ const Contact = () => {
                         <div className={contactStyles.questionColumn}>
                             <div className={contactStyles.mailUsColumn}>
                                 <hr className={contactStyles.line1} size={1} />
-                                <h5 className={contactStyles.mailUsTitle}>MAIL US</h5>
+                                <h5 className={contactStyles.mailUsTitle}>ENVOYEZ-NOUS UN EMAIL</h5>
                                 <hr className={contactStyles.line11} size={1} />
                             </div>
-                            <h1 className={contactStyles.questionTitle}>Have a Question?</h1>
+                            <h1 className={contactStyles.questionTitle}>Vous avez une question ?</h1>
                             <div className={contactStyles.messageColumn}>
                                 <div className={contactStyles.contactFormGrid}>
                                     <input
                                         className={contactStyles.contactFormName}
                                         type="text"
-                                        placeholder="Name"
+                                        placeholder="Nom"
                                         value={name}
                                         onChange={(e) => setName(e.target.value)}
                                     />
@@ -126,14 +125,14 @@ const Contact = () => {
                                     <input
                                         className={contactStyles.contactFormSubject}
                                         type="text"
-                                        placeholder="Subject"
+                                        placeholder="Objet"
                                         value={subject}
                                         onChange={(e) => setSubject(e.target.value)}
                                     />
                                     <input
                                         className={contactStyles.contactFormPhone}
                                         type="tel"
-                                        placeholder="Phone"
+                                        placeholder="Téléphone"
                                         value={phone}
                                         onChange={(e) => setPhone(e.target.value)}
                                     />
@@ -145,7 +144,7 @@ const Contact = () => {
                                     onChange={(e) => setMessage(e.target.value)}
                                 ></textarea>
                                 <button className={contactStyles.sendButton} onClick={handleSendClick}>
-                                    Send
+                                    Envoyer
                                 </button>
                             </div>
                         </div>
@@ -153,15 +152,15 @@ const Contact = () => {
                     <div className={contactStyles.visitUsColumn}>
                         <div className={contactStyles.visitUsColumnHeader}>
                             <hr className={contactStyles.line} size={1} />
-                            <h5 className={contactStyles.visitUsTitle}>VISIT US!</h5>
+                            <h5 className={contactStyles.visitUsTitle}>VISITEZ-NOUS !</h5>
                             <hr className={contactStyles.line2} size={1} />
                         </div>
-                        <h1 className={contactStyles.branchesTitle}>Come and visit our Branches</h1>
+                        <h1 className={contactStyles.branchesTitle}>Venez visiter nos succursales</h1>
                         <div className={contactStyles.branchesRow}>
                             <div className={contactStyles.branchColumn1}>
                                 <div className={contactStyles.branchBox1}>
                                     <div className={contactStyles.branchInfoColumn}>
-                                        <h1 className={contactStyles.branchTitle1}>City, Province</h1>
+                                        <h1 className={contactStyles.branchTitle1}>Ville, Province</h1>
                                         <h4 className={contactStyles.branchAddress1}>
                                             42 Evergreen Terrace, <br />
                                             Springfield
@@ -178,7 +177,7 @@ const Contact = () => {
                                             <img
                                                 className={contactStyles.branchPhoneIcon1}
                                                 src={'/assets/phone_gold.svg'}
-                                                alt="phone"
+                                                alt="téléphone"
                                             />
                                             <h4 className={contactStyles.branchPhoneText1}>(123) 456 - 7890</h4>
                                         </div>
@@ -193,7 +192,7 @@ const Contact = () => {
                             <div className={contactStyles.branchColumn2}>
                                 <div className={contactStyles.branchBox2}>
                                     <div className={contactStyles.branchInfoColumn2}>
-                                        <h1 className={contactStyles.branchTitle2}>City, Province</h1>
+                                        <h1 className={contactStyles.branchTitle2}>Ville, Province</h1>
                                         <h4 className={contactStyles.branchAddress2}>
                                             123 Sesame Street,
                                             <br />
@@ -211,7 +210,7 @@ const Contact = () => {
                                             <img
                                                 className={contactStyles.branchPhoneIcon2}
                                                 src={'/assets/phone_gold.svg'}
-                                                alt="phone"
+                                                alt="téléphone"
                                             />
                                             <h4 className={contactStyles.branchPhoneText2}>(123) 456 - 7890</h4>
                                         </div>

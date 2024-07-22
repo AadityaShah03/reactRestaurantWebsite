@@ -21,10 +21,9 @@
 
 .reservationWrapper {
   display: flex;
-  justify-content: space-between;
   gap: 0 10px;
-  width: 328px;
-  min-width: 0;
+  width: 500px;
+  min-width: fit-content;
 
   @include lg {
     width: 100%;
@@ -50,12 +49,8 @@
 
 .headerControls {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
   align-items: center;
-  gap: 0 10px;
-  margin: 0 auto;
-  width: 85%;
-  max-width: 85%;
 
   @include sm {
     flex-direction: column;
@@ -67,22 +62,16 @@
   display: flex;
   justify-content: center;
   min-width: 245px;
+  max-width: 300px;
   font: 400 20px/1.26 "Josefin Sans", Helvetica, Arial, serif;
-  color: rgb(222 222 222);
+  color: rgb(225 177 104);
   text-align: center;
-  padding: 21px 34px;
-  outline: 2px solid rgb(225 177 104);
   background-color: transparent;
-  outline-offset: -2px;
-
-  @include sm {
-    width: 100%;
-    min-width: unset;
-  }
+  align-items:center;
 }
 
 .logoImage {
-  width: 365px;
+  width: 20%;
   min-width: 0;
   object-fit: cover;
 
@@ -93,10 +82,14 @@
   }
 }
 
+.linkButton{
+  text-decoration: none;
+}
+
 .reservationButton {
   display: flex;
   justify-content: center;
-  min-width: 232px;
+  min-width: 150px;
   font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
   color: rgb(41 46 54);
   text-align: center;

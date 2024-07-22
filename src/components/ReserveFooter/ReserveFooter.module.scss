@@ -132,6 +132,7 @@
   width: 358px;
   font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
   color: rgb(255 255 255);
+  background-color: transparent;
   padding: 20px 21px;
   outline: 1px solid rgb(133 133 133);
   outline-offset: -1px;
@@ -162,6 +163,7 @@
   width: 358px;
   font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
   color: rgb(255 255 255);
+  background-color: transparent;
   padding: 20px;
   outline: 1px solid rgb(133 133 133);
   outline-offset: -1px;
@@ -205,6 +207,7 @@
   width: 232px;
   font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
   color: rgb(255 255 255);
+  background-color: transparent;
   padding: 20px 21px;
   outline: 1px solid rgb(133 133 133);
   outline-offset: -1px;
@@ -231,6 +234,7 @@
   width: 232px;
   font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
   color: rgb(255 255 255);
+  background-color: transparent;
   padding: 20px 21px;
   outline: 1px solid rgb(133 133 133);
   outline-offset: -1px;
@@ -257,6 +261,7 @@
   width: 232px;
   font: 500 22px/1.26 "Josefin Sans", Helvetica, Arial, serif;
   color: rgb(255 255 255);
+  background-color: transparent;
   padding: 20px 21px;
   outline: 1px solid rgb(133 133 133);
   outline-offset: -1px;
@@ -607,4 +612,9 @@
   @include xxs {
     font-size: 20px;
   }
+}
+
+
+.linkButton{
+  text-decoration: none;
 }

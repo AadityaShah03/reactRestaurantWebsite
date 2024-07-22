@@ -74,19 +74,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0 10px;
-    margin: 200px auto 67px;
+    gap: 0 50px;
+    margin: 50px auto 50px;
     width: 1376.0625px;
     max-width: 85%;
 
     @include md {
         flex-direction: column;
         gap: 30px 10px;
-        margin: 150px auto 67px;
+        margin: 50px auto 50px;
     }
 
     @include xs {
-        margin: 80px auto 67px;
+        margin: 50px auto 50px;
     }
 
     @include tn {
